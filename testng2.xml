@@ -12,9 +12,7 @@
 			<!--<class name="api.test.UserTests"/>-->
 			<class name="api.test.UserTests2"/>
 		</classes>
-	</test> <!--
-	PetTest -->
-</suite> <!--
-PetSuite -->
+	</test> <!--PetTest -->
+</suite> <!--PetSuite -->
 
 
