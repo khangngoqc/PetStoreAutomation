@@ -3681,3 +3681,48 @@
 21:04:08.858 [main] INFO  api.test.UserTests2 - ***User updated***
 21:04:10.138 [main] INFO  api.test.UserTests2 - ***Deleting user***
 21:04:11.367 [main] INFO  api.test.UserTests2 - ***User Deleted***
+21:33:40.874 [main] INFO  api.test.User.CreateUserTests - ***Creating user***
+21:33:43.406 [main] INFO  api.test.User.CreateUserTests - ***User info created***
+21:33:43.411 [main] INFO  api.test.User.CreateUserTests - ***Creating user***
+21:34:29.594 [main] INFO  api.test.User.CreateUserTests - ***Creating user***
+21:34:31.939 [main] INFO  api.test.User.CreateUserTests - ***User info created***
+21:34:31.948 [main] INFO  api.test.User.CreateUserTests - ***Creating user***
+21:37:24.128 [main] INFO  api.test.User.CreateUserTests - ***Creating user***
+21:37:26.523 [main] INFO  api.test.User.CreateUserTests - ***User info created***
+21:37:26.531 [main] INFO  api.test.User.CreateUserTests - ***Creating user***
+21:44:13.105 [main] INFO  api.test.User.CreateUserTests - ***Starting TC_US_CRU_01***
+21:44:15.550 [main] INFO  api.test.User.CreateUserTests - ***Finished TC_US_CRU_01***
+21:44:15.555 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_02******
+21:44:16.909 [main] INFO  api.test.User.CreateUserTests - ***Creating user***
+21:46:52.787 [main] INFO  api.test.User.CreateUserTests - ***Starting TC_US_CRU_01***
+21:46:55.243 [main] INFO  api.test.User.CreateUserTests - ***Finished TC_US_CRU_01***
+21:46:55.247 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_02******
+21:46:56.530 [main] INFO  api.test.User.CreateUserTests - ***Creating user***
+21:46:57.792 [main] INFO  api.test.User.CreateUserTests - ***User info created***
+21:47:30.093 [main] INFO  api.test.User.CreateUserTests - ***Starting TC_US_CRU_01***
+21:47:32.455 [main] INFO  api.test.User.CreateUserTests - ***Finished TC_US_CRU_01***
+21:47:32.458 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_02******
+21:47:33.705 [main] INFO  api.test.User.CreateUserTests - ***Creating user***
+21:47:34.959 [main] INFO  api.test.User.CreateUserTests - ***User info created***
+22:05:38.632 [main] INFO  api.test.User.CreateUserTests - ***Starting TC_US_CRU_01***
+22:05:41.117 [main] INFO  api.test.User.CreateUserTests - ***Finished TC_US_CRU_01***
+22:05:41.120 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_02******
+22:05:42.565 [main] INFO  api.test.User.CreateUserTests - ******Finished TC_US_CRU_02******
+22:05:42.568 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_03******
+22:05:43.928 [main] INFO  api.test.User.CreateUserTests - ******Finished TC_US_CRU_03******
+22:11:29.053 [main] INFO  api.test.User.CreateUserTests - ***Starting TC_US_CRU_01***
+22:11:31.579 [main] INFO  api.test.User.CreateUserTests - ***Finished TC_US_CRU_01***
+22:11:31.584 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_02******
+22:11:33.022 [main] INFO  api.test.User.CreateUserTests - ******Finished TC_US_CRU_02******
+22:11:33.023 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_03******
+22:11:34.290 [main] INFO  api.test.User.CreateUserTests - ******Finished TC_US_CRU_03******
+22:11:34.294 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_03******
+22:19:11.732 [main] INFO  api.test.User.CreateUserTests - ***Starting TC_US_CRU_01***
+22:19:14.142 [main] INFO  api.test.User.CreateUserTests - ***Finished TC_US_CRU_01***
+22:19:14.146 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_02******
+22:19:15.540 [main] INFO  api.test.User.CreateUserTests - ******Finished TC_US_CRU_02******
+22:19:15.542 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_03******
+22:19:16.805 [main] INFO  api.test.User.CreateUserTests - ******Finished TC_US_CRU_03******
+22:19:16.809 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_03******
+22:19:18.107 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_03******
+22:19:19.383 [main] INFO  api.test.User.CreateUserTests - ******Finished TC_US_CRU_03******

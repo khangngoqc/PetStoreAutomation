@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.DataDrivenTest">
+      <class name="api.test.User.CreateUserTests">
         <methods>
-          <include name="testDeleteUserByName" invocation-numbers="0 1 2"/>
-          <include name="testPostUser"/>
+          <include name="setupData"/>
+          <include name="Validation_SendRequestWithInsufficientBody"/>
         </methods>
-      </class> <!-- api.test.DataDrivenTest -->
+      </class> <!-- api.test.User.CreateUserTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

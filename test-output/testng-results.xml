@@ -1,33 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-20T21:00:17 GMT+07:00" name="Default suite" finished-at="2026-07-20T21:00:25 GMT+07:00" duration-ms="7948">
+  <suite started-at="2026-07-23T22:19:11 GMT+07:00" name="Default suite" finished-at="2026-07-23T22:19:19 GMT+07:00" duration-ms="8108">
     <groups>
     </groups>
-    <test started-at="2026-07-20T21:00:17 GMT+07:00" name="Default test" finished-at="2026-07-20T21:00:25 GMT+07:00" duration-ms="7948">
-      <class name="api.test.UserTests2">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.UserTests2@47af7f3d]" started-at="2026-07-20T21:00:17 GMT+07:00" name="setupData" finished-at="2026-07-20T21:00:17 GMT+07:00" duration-ms="427" status="PASS">
+    <test started-at="2026-07-23T22:19:11 GMT+07:00" name="Default test" finished-at="2026-07-23T22:19:19 GMT+07:00" duration-ms="8108">
+      <class name="api.test.User.CreateUserTests">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.User.CreateUserTests@694abbdc]" started-at="2026-07-23T22:19:11 GMT+07:00" name="setupData" finished-at="2026-07-23T22:19:11 GMT+07:00" duration-ms="426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method signature="testPostUser()[pri:1, instance:api.test.UserTests2@47af7f3d]" started-at="2026-07-20T21:00:17 GMT+07:00" name="testPostUser" finished-at="2026-07-20T21:00:20 GMT+07:00" duration-ms="2444" status="PASS">
+        <test-method signature="MainFunctionality()[pri:1, instance:api.test.User.CreateUserTests@694abbdc]" started-at="2026-07-23T22:19:11 GMT+07:00" name="MainFunctionality" finished-at="2026-07-23T22:19:14 GMT+07:00" duration-ms="2417" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPostUser -->
-        <test-method signature="testGetUserByName()[pri:2, instance:api.test.UserTests2@47af7f3d]" started-at="2026-07-20T21:00:20 GMT+07:00" name="testGetUserByName" finished-at="2026-07-20T21:00:21 GMT+07:00" duration-ms="1283" status="PASS">
+        </test-method> <!-- MainFunctionality -->
+        <test-method signature="ResponseBody()[pri:2, instance:api.test.User.CreateUserTests@694abbdc]" started-at="2026-07-23T22:19:14 GMT+07:00" name="ResponseBody" finished-at="2026-07-23T22:19:15 GMT+07:00" duration-ms="1396" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetUserByName -->
-        <test-method signature="testUpdateUserByName()[pri:3, instance:api.test.UserTests2@47af7f3d]" started-at="2026-07-20T21:00:21 GMT+07:00" name="testUpdateUserByName" finished-at="2026-07-20T21:00:24 GMT+07:00" duration-ms="2529" status="PASS">
+        </test-method> <!-- ResponseBody -->
+        <test-method signature="Validation_SendRequestWithoutBody()[pri:3, instance:api.test.User.CreateUserTests@694abbdc]" started-at="2026-07-23T22:19:15 GMT+07:00" name="Validation_SendRequestWithoutBody" finished-at="2026-07-23T22:19:16 GMT+07:00" duration-ms="1263" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUpdateUserByName -->
-        <test-method signature="testDeleteUserByName()[pri:4, instance:api.test.UserTests2@47af7f3d]" started-at="2026-07-20T21:00:24 GMT+07:00" name="testDeleteUserByName" finished-at="2026-07-20T21:00:25 GMT+07:00" duration-ms="1233" status="PASS">
+        </test-method> <!-- Validation_SendRequestWithoutBody -->
+        <test-method signature="Validation_SendRequestWithInsufficientBody()[pri:4, instance:api.test.User.CreateUserTests@694abbdc]" started-at="2026-07-23T22:19:16 GMT+07:00" name="Validation_SendRequestWithInsufficientBody" finished-at="2026-07-23T22:19:18 GMT+07:00" duration-ms="1296" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at api.test.User.CreateUserTests.Validation_SendRequestWithInsufficientBody(CreateUserTests.java:116)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDeleteUserByName -->
-      </class> <!-- api.test.UserTests2 -->
+        </test-method> <!-- Validation_SendRequestWithInsufficientBody -->
+        <test-method signature="Validation_SendRequestWithInvalidDataType()[pri:5, instance:api.test.User.CreateUserTests@694abbdc]" started-at="2026-07-23T22:19:18 GMT+07:00" name="Validation_SendRequestWithInvalidDataType" finished-at="2026-07-23T22:19:19 GMT+07:00" duration-ms="1278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validation_SendRequestWithInvalidDataType -->
+      </class> <!-- api.test.User.CreateUserTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
