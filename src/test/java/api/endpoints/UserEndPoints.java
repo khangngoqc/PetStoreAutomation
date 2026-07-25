@@ -65,6 +65,19 @@ public class UserEndPoints {
 		return res;
 	}
 	
+	public static Response loginUser(String userName, String password)
+	{
+		Response res = given()
+			.contentType(ContentType.JSON)
+			.accept(ContentType.JSON)
+			.queryParam("username", userName)
+			.queryParam("password", userName)
+	
+		.when()
+			.get(Routes.login_url);
+		
+		return res;
+	}
 	
 	
 	

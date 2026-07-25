@@ -9,16 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">8.108</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">13.477</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">api.test.User.CreateUserTests</td><td><a href="#m0">Validation_SendRequestWithInsufficientBody</a></td><td rowspan="1">1784819956807</td><td rowspan="1">1296</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">api.test.User.CreateUserTests</td><td><a href="#m1">MainFunctionality</a></td><td rowspan="1">1784819951725</td><td rowspan="1">2417</td></tr><tr class="passedeven"><td><a href="#m2">ResponseBody</a></td><td rowspan="1">1784819954145</td><td rowspan="1">1396</td></tr><tr class="passedeven"><td><a href="#m3">Validation_SendRequestWithInvalidDataType</a></td><td rowspan="1">1784819958105</td><td rowspan="1">1278</td></tr><tr class="passedeven"><td><a href="#m4">Validation_SendRequestWithoutBody</a></td><td rowspan="1">1784819955542</td><td rowspan="1">1263</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">api.test.User.UpdateUserTests</td><td><a href="#m0">Validation_SendUpdateUserRequestWithoutLogin</a></td><td rowspan="1">1784978308104</td><td rowspan="1">1309</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">api.test.User.UpdateUserTests</td><td><a href="#m1">CreateTestUser</a></td><td rowspan="1">1784978296332</td><td rowspan="1">3616</td></tr><tr class="passedeven"><td><a href="#m2">ResponseBody</a></td><td rowspan="1">1784978303958</td><td rowspan="1">2659</td></tr><tr class="passedeven"><td><a href="#m3">Validation_CheckUpdatedDetailGetAPI</a></td><td rowspan="1">1784978306618</td><td rowspan="1">1485</td></tr><tr class="passedeven"><td><a href="#m4">testUpdateUserByName_MainFunctionality</a></td><td rowspan="1">1784978299952</td><td rowspan="1">4003</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">api.test.User.CreateUserTests#Validation_SendRequestWithInsufficientBody</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+<h2>Default test</h2><h3 id="m0">api.test.User.UpdateUserTests#Validation_SendUpdateUserRequestWithoutLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertTrue(Assert.java:57)
 	at org.testng.Assert.assertTrue(Assert.java:67)
-	at api.test.User.CreateUserTests.Validation_SendRequestWithInsufficientBody(CreateUserTests.java:116)
+	at api.test.User.UpdateUserTests.Validation_SendUpdateUserRequestWithoutLogin(UpdateUserTests.java:153)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -46,9 +46,9 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">api.test.User.CreateUserTests#MainFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">api.test.User.CreateUserTests#ResponseBody</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">api.test.User.CreateUserTests#Validation_SendRequestWithInvalidDataType</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">api.test.User.CreateUserTests#Validation_SendRequestWithoutBody</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">api.test.User.UpdateUserTests#CreateTestUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">api.test.User.UpdateUserTests#ResponseBody</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">api.test.User.UpdateUserTests#Validation_CheckUpdatedDetailGetAPI</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">api.test.User.UpdateUserTests#testUpdateUserByName_MainFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

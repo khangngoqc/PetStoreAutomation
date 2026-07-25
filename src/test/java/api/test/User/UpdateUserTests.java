@@ -1,0 +1,168 @@
+package api.test.User;
+
+import static org.testng.Assert.assertEquals;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.github.javafaker.Faker;
+
+import api.endpoints.UserEndPoints;
+import api.payload.User;
+import io.restassured.module.jsv.JsonSchemaValidator;
+import io.restassured.response.Response;
+
+public class UpdateUserTests {
+
+	Faker faker;
+	User userPayload;
+
+	public Logger logger;
+
+	@BeforeClass
+	public void setupData() {
+
+		faker = new Faker();
+		userPayload = new User();
+		userPayload.setId(faker.number().randomDigit());
+		userPayload.setUsername(faker.name().username());
+		userPayload.setFirstname(faker.name().firstName());
+		userPayload.setLastname(faker.name().lastName());
+		userPayload.setEmail(faker.internet().emailAddress());
+		userPayload.setPassword(faker.internet().password());
+		userPayload.setPhone(faker.phoneNumber().phoneNumber());
+
+		// logs
+		logger = LogManager.getLogger(this.getClass());
+
+	}
+
+	@Test(priority = 1)
+	public void CreateTestUser() {
+		logger.info("***Creating user***");
+		Response res = UserEndPoints.createUser(userPayload);
+		res.then().log().all();
+
+		Assert.assertEquals(res.getStatusCode(), 200);
+		
+		Response res1 = UserEndPoints.readUser(this.userPayload.getUsername());
+		res1.then().log().body();
+
+		logger.info("***User info created***");
+	}
+
+	@Test(priority = 2)
+	public void testUpdateUserByName_MainFunctionality() {
+
+		logger.info("******Starting TC_US_UPS_001******");
+
+		logger.info("***Log user in the system***");
+		UserEndPoints.loginUser(this.userPayload.getUsername(), this.userPayload.getPassword());
+
+		logger.info("***Updating user***");
+
+		// Update data using payload
+		userPayload.setFirstname(faker.name().firstName());
+		userPayload.setLastname(faker.name().lastName());
+		userPayload.setEmail(faker.internet().emailAddress());
+
+		Response res = UserEndPoints.updateUser(this.userPayload.getUsername(), userPayload);
+
+		res.then().log().body();
+
+		Assert.assertEquals(res.getStatusCode(), 200);
+		Assert.assertTrue(res.getBody() != null);
+
+		logger.info("***User updated***");
+
+		// Checking data after update
+		Response resAfterUpdate = UserEndPoints.readUser(this.userPayload.getUsername());
+		resAfterUpdate.then().log().body();
+		
+		assertEquals(resAfterUpdate.getStatusCode(), 200);
+
+		logger.info("******Finished TC_US_UPS_001******");
+	}
+
+	@Test(priority = 3)
+	public void ResponseBody() {
+		logger.info("******Starting TC_US_CRU_02******");
+
+		logger.info("***Log user in the system***");
+		UserEndPoints.loginUser(this.userPayload.getUsername(), this.userPayload.getPassword());
+
+		
+		Response res = UserEndPoints.updateUser(this.userPayload.getUsername(), userPayload);
+
+		String minimalSchema = "{\n" + "  \"type\": \"object\"\n" + "}";
+
+		res.then().log().body();
+
+		res.then().assertThat().statusCode(200).body(JsonSchemaValidator.matchesJsonSchema(minimalSchema));
+
+		logger.info("******Finished TC_US_CRU_02******");
+	}
+	
+	@Test(priority = 4)
+	public void Validation_CheckUpdatedDetailGetAPI() {
+		
+		logger.info("******Starting TC_US_UPS_003******");
+		Response resAfterUpdate = UserEndPoints.readUser(this.userPayload.getUsername());
+		
+		resAfterUpdate.then().log().body();
+		
+		assertEquals(resAfterUpdate.getStatusCode(), 200);
+		
+		/*
+		 * String updatedFirstName =
+		 * resAfterUpdate.jsonPath().get("firstname").toString(); String updatedLastName
+		 * = resAfterUpdate.jsonPath().get("lastname").toString();
+		 */
+		String updatedEmail = resAfterUpdate.jsonPath().get("email").toString();
+		
+		/*
+		 * Assert.assertTrue(updatedFirstName.equals(this.userPayload.getFirstname()));
+		 * Assert.assertTrue(updatedLastName.equals(this.userPayload.getLastname()));
+		 */
+		Assert.assertTrue(updatedEmail.equals(this.userPayload.getEmail()));
+		
+		logger.info("******Starting TC_US_UPS_003******");
+
+	}
+	
+	@Test(priority = 5)
+	public void Validation_SendUpdateUserRequestWithoutLogin() {
+
+		logger.info("******Starting TC_US_UPS_004******");
+
+
+		logger.info("***Updating user***");
+
+		// Update data using payload
+		userPayload.setFirstname(faker.name().firstName());
+		userPayload.setLastname(faker.name().lastName());
+		userPayload.setEmail(faker.internet().emailAddress());
+
+		Response res = UserEndPoints.updateUser(this.userPayload.getUsername(), userPayload);
+
+		res.then().log().body();
+
+		Assert.assertTrue(res.getStatusCode()  >= 400);
+		Assert.assertTrue(res.getBody() != null);
+
+		logger.info("***User updated***");
+
+		// Checking data after update
+		Response resAfterUpdate = UserEndPoints.readUser(this.userPayload.getUsername());
+		resAfterUpdate.then().log().body();
+		
+		assertEquals(resAfterUpdate.getStatusCode(), 200);
+
+		logger.info("******Finished TC_US_UPS_004******");
+	}
+	
+
+}

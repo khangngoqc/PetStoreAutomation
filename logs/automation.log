@@ -3726,3 +3726,126 @@
 22:19:16.809 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_03******
 22:19:18.107 [main] INFO  api.test.User.CreateUserTests - ******Starting TC_US_CRU_03******
 22:19:19.383 [main] INFO  api.test.User.CreateUserTests - ******Finished TC_US_CRU_03******
+16:52:48.948 [main] INFO  api.test.User.UpdateUserTests - ***Creating user***
+16:52:51.438 [main] INFO  api.test.User.UpdateUserTests - ***User info created***
+16:52:51.443 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***
+16:52:52.745 [main] INFO  api.test.User.UpdateUserTests - ***User updated***
+17:10:52.253 [main] INFO  api.test.User.UpdateUserTests - ***Creating user***
+17:10:54.696 [main] INFO  api.test.User.UpdateUserTests - ***User info created***
+17:10:54.701 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:10:56.009 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***
+17:10:57.301 [main] INFO  api.test.User.UpdateUserTests - ***User updated***
+17:16:33.668 [main] INFO  api.test.User.UpdateUserTests - ***Creating user***
+17:16:36.010 [main] INFO  api.test.User.UpdateUserTests - ***User info created***
+17:16:36.014 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:16:37.284 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_CRU_02******
+17:16:38.685 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_CRU_02******
+17:16:38.687 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_001******
+17:16:38.688 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:16:39.922 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***
+17:16:41.161 [main] INFO  api.test.User.UpdateUserTests - ***User updated***
+17:16:42.415 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_UPS_001******
+17:36:23.269 [main] INFO  api.test.User.UpdateUserTests - ***Creating user***
+17:36:25.589 [main] INFO  api.test.User.UpdateUserTests - ***User info created***
+17:36:25.592 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_002******
+17:36:25.592 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:36:26.859 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***
+17:36:28.134 [main] INFO  api.test.User.UpdateUserTests - ***User updated***
+17:36:29.375 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_UPS_002******
+17:36:29.378 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:36:30.628 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_CRU_02******
+17:36:31.997 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_CRU_02******
+17:36:31.999 [main] INFO  api.test.User.UpdateUserTests - ***Reading user info***
+17:37:08.993 [main] INFO  api.test.User.UpdateUserTests - ***Creating user***
+17:37:11.315 [main] INFO  api.test.User.UpdateUserTests - ***User info created***
+17:37:11.318 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_002******
+17:37:11.318 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:37:12.613 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***
+17:37:13.886 [main] INFO  api.test.User.UpdateUserTests - ***User updated***
+17:37:15.125 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_UPS_002******
+17:37:15.128 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:37:16.364 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_CRU_02******
+17:37:17.730 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_CRU_02******
+17:37:17.731 [main] INFO  api.test.User.UpdateUserTests - ***Reading user info***
+17:41:06.820 [main] INFO  api.test.User.UpdateUserTests - ***Creating user***
+17:41:09.163 [main] INFO  api.test.User.UpdateUserTests - ***User info created***
+17:41:09.167 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_002******
+17:41:09.167 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:41:10.429 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***
+17:41:11.713 [main] INFO  api.test.User.UpdateUserTests - ***User updated***
+17:41:12.954 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_UPS_002******
+17:41:12.957 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:41:14.226 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_CRU_02******
+17:41:15.591 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_CRU_02******
+17:41:15.593 [main] INFO  api.test.User.UpdateUserTests - ***Reading user info***
+17:45:08.087 [main] INFO  api.test.User.UpdateUserTests - ***Creating user***
+17:45:10.460 [main] INFO  api.test.User.UpdateUserTests - ***User info created***
+17:45:10.464 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_002******
+17:45:10.465 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:45:11.756 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***
+17:45:13.021 [main] INFO  api.test.User.UpdateUserTests - ***User updated***
+17:45:14.283 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_UPS_002******
+17:45:14.288 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:45:15.635 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_CRU_02******
+17:45:16.997 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_CRU_02******
+17:45:16.999 [main] INFO  api.test.User.UpdateUserTests - ***Reading user info***
+17:46:19.337 [main] INFO  api.test.User.UpdateUserTests - ***Creating user***
+17:46:21.660 [main] INFO  api.test.User.UpdateUserTests - ***User info created***
+17:46:21.665 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_002******
+17:46:21.665 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:46:22.941 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***
+17:46:24.211 [main] INFO  api.test.User.UpdateUserTests - ***User updated***
+17:46:25.488 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_UPS_002******
+17:46:25.493 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:46:26.758 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_CRU_02******
+17:46:28.142 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_CRU_02******
+17:46:28.143 [main] INFO  api.test.User.UpdateUserTests - ***Reading user info***
+17:47:51.341 [main] INFO  api.test.User.UpdateUserTests - ***Creating user***
+17:47:53.902 [main] INFO  api.test.User.UpdateUserTests - ***User info created***
+17:47:53.906 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_002******
+17:47:53.906 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:47:55.257 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***
+17:47:56.540 [main] INFO  api.test.User.UpdateUserTests - ***User updated***
+17:47:57.833 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_UPS_002******
+17:47:57.835 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:47:59.143 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_CRU_02******
+17:48:00.551 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_CRU_02******
+17:48:00.553 [main] INFO  api.test.User.UpdateUserTests - ***Reading user info***
+17:49:40.498 [main] INFO  api.test.User.UpdateUserTests - ***Creating user***
+17:49:44.122 [main] INFO  api.test.User.UpdateUserTests - ***User info created***
+17:49:44.127 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_002******
+17:49:44.127 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:49:45.431 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***
+17:49:46.712 [main] INFO  api.test.User.UpdateUserTests - ***User updated***
+17:49:48.026 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_UPS_002******
+17:49:48.029 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:49:49.332 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_CRU_02******
+17:49:50.756 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_CRU_02******
+17:49:50.757 [main] INFO  api.test.User.UpdateUserTests - ***Reading user info***
+17:51:53.606 [main] INFO  api.test.User.UpdateUserTests - ***Creating user***
+17:51:57.377 [main] INFO  api.test.User.UpdateUserTests - ***User info created***
+17:51:57.383 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_002******
+17:51:57.383 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:51:58.727 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***
+17:52:00.042 [main] INFO  api.test.User.UpdateUserTests - ***User updated***
+17:52:01.313 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_UPS_002******
+17:52:01.315 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+17:52:02.590 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_CRU_02******
+17:52:03.959 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_CRU_02******
+17:52:03.962 [main] INFO  api.test.User.UpdateUserTests - ***Reading user info***
+18:17:43.309 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_004******
+18:17:43.310 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***
+18:18:16.338 [main] INFO  api.test.User.UpdateUserTests - ***Creating user***
+18:18:19.948 [main] INFO  api.test.User.UpdateUserTests - ***User info created***
+18:18:19.953 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_001******
+18:18:19.953 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+18:18:21.290 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***
+18:18:22.686 [main] INFO  api.test.User.UpdateUserTests - ***User updated***
+18:18:23.955 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_UPS_001******
+18:18:23.959 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_CRU_02******
+18:18:23.959 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
+18:18:26.617 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_CRU_02******
+18:18:26.618 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_003******
+18:18:28.103 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_003******
+18:18:28.105 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_004******
+18:18:28.105 [main] INFO  api.test.User.UpdateUserTests - ***Updating user***

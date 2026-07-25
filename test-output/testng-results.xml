@@ -2,28 +2,32 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-23T22:19:11 GMT+07:00" name="Default suite" finished-at="2026-07-23T22:19:19 GMT+07:00" duration-ms="8108">
+  <suite started-at="2026-07-25T18:18:15 GMT+07:00" name="Default suite" finished-at="2026-07-25T18:18:29 GMT+07:00" duration-ms="13477">
     <groups>
     </groups>
-    <test started-at="2026-07-23T22:19:11 GMT+07:00" name="Default test" finished-at="2026-07-23T22:19:19 GMT+07:00" duration-ms="8108">
-      <class name="api.test.User.CreateUserTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.User.CreateUserTests@694abbdc]" started-at="2026-07-23T22:19:11 GMT+07:00" name="setupData" finished-at="2026-07-23T22:19:11 GMT+07:00" duration-ms="426" status="PASS">
+    <test started-at="2026-07-25T18:18:15 GMT+07:00" name="Default test" finished-at="2026-07-25T18:18:29 GMT+07:00" duration-ms="13477">
+      <class name="api.test.User.UpdateUserTests">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.User.UpdateUserTests@694abbdc]" started-at="2026-07-25T18:18:15 GMT+07:00" name="setupData" finished-at="2026-07-25T18:18:16 GMT+07:00" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method signature="MainFunctionality()[pri:1, instance:api.test.User.CreateUserTests@694abbdc]" started-at="2026-07-23T22:19:11 GMT+07:00" name="MainFunctionality" finished-at="2026-07-23T22:19:14 GMT+07:00" duration-ms="2417" status="PASS">
+        <test-method signature="CreateTestUser()[pri:1, instance:api.test.User.UpdateUserTests@694abbdc]" started-at="2026-07-25T18:18:16 GMT+07:00" name="CreateTestUser" finished-at="2026-07-25T18:18:19 GMT+07:00" duration-ms="3616" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MainFunctionality -->
-        <test-method signature="ResponseBody()[pri:2, instance:api.test.User.CreateUserTests@694abbdc]" started-at="2026-07-23T22:19:14 GMT+07:00" name="ResponseBody" finished-at="2026-07-23T22:19:15 GMT+07:00" duration-ms="1396" status="PASS">
+        </test-method> <!-- CreateTestUser -->
+        <test-method signature="testUpdateUserByName_MainFunctionality()[pri:2, instance:api.test.User.UpdateUserTests@694abbdc]" started-at="2026-07-25T18:18:19 GMT+07:00" name="testUpdateUserByName_MainFunctionality" finished-at="2026-07-25T18:18:23 GMT+07:00" duration-ms="4003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserByName_MainFunctionality -->
+        <test-method signature="ResponseBody()[pri:3, instance:api.test.User.UpdateUserTests@694abbdc]" started-at="2026-07-25T18:18:23 GMT+07:00" name="ResponseBody" finished-at="2026-07-25T18:18:26 GMT+07:00" duration-ms="2659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ResponseBody -->
-        <test-method signature="Validation_SendRequestWithoutBody()[pri:3, instance:api.test.User.CreateUserTests@694abbdc]" started-at="2026-07-23T22:19:15 GMT+07:00" name="Validation_SendRequestWithoutBody" finished-at="2026-07-23T22:19:16 GMT+07:00" duration-ms="1263" status="PASS">
+        <test-method signature="Validation_CheckUpdatedDetailGetAPI()[pri:4, instance:api.test.User.UpdateUserTests@694abbdc]" started-at="2026-07-25T18:18:26 GMT+07:00" name="Validation_CheckUpdatedDetailGetAPI" finished-at="2026-07-25T18:18:28 GMT+07:00" duration-ms="1485" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validation_SendRequestWithoutBody -->
-        <test-method signature="Validation_SendRequestWithInsufficientBody()[pri:4, instance:api.test.User.CreateUserTests@694abbdc]" started-at="2026-07-23T22:19:16 GMT+07:00" name="Validation_SendRequestWithInsufficientBody" finished-at="2026-07-23T22:19:18 GMT+07:00" duration-ms="1296" status="FAIL">
+        </test-method> <!-- Validation_CheckUpdatedDetailGetAPI -->
+        <test-method signature="Validation_SendUpdateUserRequestWithoutLogin()[pri:5, instance:api.test.User.UpdateUserTests@694abbdc]" started-at="2026-07-25T18:18:28 GMT+07:00" name="Validation_SendUpdateUserRequestWithoutLogin" finished-at="2026-07-25T18:18:29 GMT+07:00" duration-ms="1309" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -34,7 +38,7 @@ at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertTrue(Assert.java:57)
 at org.testng.Assert.assertTrue(Assert.java:67)
-at api.test.User.CreateUserTests.Validation_SendRequestWithInsufficientBody(CreateUserTests.java:116)
+at api.test.User.UpdateUserTests.Validation_SendUpdateUserRequestWithoutLogin(UpdateUserTests.java:153)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -66,12 +70,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validation_SendRequestWithInsufficientBody -->
-        <test-method signature="Validation_SendRequestWithInvalidDataType()[pri:5, instance:api.test.User.CreateUserTests@694abbdc]" started-at="2026-07-23T22:19:18 GMT+07:00" name="Validation_SendRequestWithInvalidDataType" finished-at="2026-07-23T22:19:19 GMT+07:00" duration-ms="1278" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Validation_SendRequestWithInvalidDataType -->
-      </class> <!-- api.test.User.CreateUserTests -->
+        </test-method> <!-- Validation_SendUpdateUserRequestWithoutLogin -->
+      </class> <!-- api.test.User.UpdateUserTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
