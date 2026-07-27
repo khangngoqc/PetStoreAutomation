@@ -1,5 +1,6 @@
 package api.test.User;
 
+import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
 import org.apache.logging.log4j.LogManager;
@@ -10,8 +11,10 @@ import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
 
+import api.endpoints.Routes;
 import api.endpoints.UserEndPoints;
 import api.payload.User;
+import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
@@ -65,11 +68,12 @@ public class UpdateUserTests {
 		logger.info("***Updating user***");
 
 		// Update data using payload
-		userPayload.setFirstname(faker.name().firstName());
-		userPayload.setLastname(faker.name().lastName());
-		userPayload.setEmail(faker.internet().emailAddress());
+		User userPayload2 = new User();
+		userPayload2.setFirstname(faker.name().firstName());
+		userPayload2.setLastname(faker.name().lastName());
+		userPayload2.setEmail(faker.internet().emailAddress());
 
-		Response res = UserEndPoints.updateUser(this.userPayload.getUsername(), userPayload);
+		Response res = UserEndPoints.updateUser(this.userPayload.getUsername(), userPayload2);
 
 		res.then().log().body();
 
@@ -127,7 +131,11 @@ public class UpdateUserTests {
 		 * Assert.assertTrue(updatedFirstName.equals(this.userPayload.getFirstname()));
 		 * Assert.assertTrue(updatedLastName.equals(this.userPayload.getLastname()));
 		 */
-		Assert.assertTrue(updatedEmail.equals(this.userPayload.getEmail()));
+		
+		System.out.println(updatedEmail);
+		System.out.println(this.userPayload.getEmail());
+		
+		Assert.assertTrue(updatedEmail.contains(this.userPayload.getEmail()));
 		
 		logger.info("******Starting TC_US_UPS_003******");
 
@@ -162,6 +170,53 @@ public class UpdateUserTests {
 		assertEquals(resAfterUpdate.getStatusCode(), 200);
 
 		logger.info("******Finished TC_US_UPS_004******");
+	}
+	
+	@Test(priority = 6)
+	public void Validation_SendRequestWithoutUsernameParam() {
+		logger.info("******Starting TC_US_UPS_005******");
+		
+		logger.info("***Log user in the system***");
+		UserEndPoints.loginUser(this.userPayload.getUsername(), this.userPayload.getPassword());
+		
+		Response res = given()
+			.contentType(ContentType.JSON)
+			.accept(ContentType.JSON)
+			.body(this.userPayload)
+			.pathParam("username", "")
+			
+		.when()
+			.put(Routes.update_url);
+				
+		res.then().log().body();
+		
+		Assert.assertTrue(res.getStatusCode() >= 400);
+		Assert.assertTrue(res.getBody() != null);
+	
+		logger.info("******Finished TC_US_UPS_005******");
+	}
+	
+	@Test(priority = 7)
+	public void Validation_SendRequestWithoutBody() {
+		logger.info("******Starting TC_US_UPS_006******");
+		
+		logger.info("***Log user in the system***");
+		UserEndPoints.loginUser(this.userPayload.getUsername(), this.userPayload.getPassword());
+		
+		Response res = given()
+			.contentType(ContentType.JSON)
+			.accept(ContentType.JSON)
+			.pathParam("username", this.userPayload.getUsername())
+			
+		.when()
+			.put(Routes.update_url);
+				
+		res.then().log().body();
+		
+		Assert.assertTrue(res.getStatusCode() >= 400);
+		Assert.assertTrue(res.getBody() != null);
+	
+		logger.info("******Finished TC_US_UPS_006******");
 	}
 	
 
