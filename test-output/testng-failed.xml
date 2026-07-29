@@ -6,7 +6,9 @@
       <class name="api.test.User.UpdateUserTests">
         <methods>
           <include name="setupData"/>
+          <include name="Validation_SendRequestWithInvalidUsernameParam"/>
           <include name="Validation_SendUpdateUserRequestWithoutLogin"/>
+          <include name="Validation_SendRequestWithInexistedUsernameParam"/>
         </methods>
       </class> <!-- api.test.User.UpdateUserTests -->
     </classes>

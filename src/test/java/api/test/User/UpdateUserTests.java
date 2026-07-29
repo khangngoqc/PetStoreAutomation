@@ -3,6 +3,8 @@ package api.test.User;
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
+import java.util.HashMap;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -40,10 +42,11 @@ public class UpdateUserTests {
 
 		// logs
 		logger = LogManager.getLogger(this.getClass());
+		
+		CreateTestUser();
 
 	}
 
-	@Test(priority = 1)
 	public void CreateTestUser() {
 		logger.info("***Creating user***");
 		Response res = UserEndPoints.createUser(userPayload);
@@ -196,7 +199,7 @@ public class UpdateUserTests {
 		logger.info("******Finished TC_US_UPS_005******");
 	}
 	
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void Validation_SendRequestWithoutBody() {
 		logger.info("******Starting TC_US_UPS_006******");
 		
@@ -217,6 +220,90 @@ public class UpdateUserTests {
 		Assert.assertTrue(res.getBody() != null);
 	
 		logger.info("******Finished TC_US_UPS_006******");
+	}
+	
+	@Test(priority = 9)
+	public void Validation_SendRequestWithInexistedUsernameParam() {
+		logger.info("******Starting TC_US_UPS_007******");
+		
+		logger.info("***Log user in the system***");
+		UserEndPoints.loginUser(this.userPayload.getUsername(), this.userPayload.getPassword());
+		
+		Response res = given()
+			.contentType(ContentType.JSON)
+			.accept(ContentType.JSON)
+			.body(this.userPayload)
+			.pathParam("username", "inexisted-username-input")
+			
+		.when()
+			.put(Routes.update_url);
+				
+		res.then().log().body();
+		
+		Assert.assertTrue(res.getStatusCode() >= 400);
+		Assert.assertTrue(res.getBody() != null);
+	
+		logger.info("******Finished TC_US_UPS_007******");
+	}
+	
+	@Test(priority = 10)
+	public void Validation_SendRequestWithInvalidUsernameParam() {
+		logger.info("******Starting TC_US_UPS_008******");
+		
+		logger.info("***Log user in the system***");
+		UserEndPoints.loginUser(this.userPayload.getUsername(), this.userPayload.getPassword());
+		
+		Response res = given()
+			.contentType(ContentType.JSON)
+			.accept(ContentType.JSON)
+			.body(this.userPayload)
+			.pathParam("username", 4124514)
+			
+		.when()
+			.put(Routes.update_url);
+				
+		res.then().log().body();
+		
+		Assert.assertTrue(res.getStatusCode() >= 400);
+		Assert.assertTrue(res.getBody() != null);
+	
+		logger.info("******Finished TC_US_UPS_008******");
+	}
+	
+	@Test(priority = 11)
+	public void Validation_SendRequestWithInvalidDataType() {
+		
+		logger.info("***Log user in the system***");
+		UserEndPoints.loginUser(this.userPayload.getUsername(), this.userPayload.getPassword());
+		
+		logger.info("******Starting TC_US_UPS_010******");
+		
+		HashMap data = new HashMap();
+		data.put("id", true);
+		data.put("username", null);
+		data.put("firstName", "");
+		data.put("lastName", 3);
+		data.put("password", true);
+		data.put("email", 2);
+		data.put("phone", true);
+		data.put("userStatus", "string");
+		
+		
+		Response res = given()
+			.contentType(ContentType.JSON)
+			.accept(ContentType.JSON)
+			.pathParam("username", this.userPayload.getUsername())
+			.body(data)
+			
+		.when()
+			.put(Routes.update_url);
+				
+		res.then().log().body();
+		
+		Assert.assertTrue(res.getStatusCode() >= 400);
+		Assert.assertTrue(res.getBody() != null);
+	
+		logger.info("******Finished TC_US_UPS_010******");
 	}
 	
 
