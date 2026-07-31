@@ -4100,3 +4100,29 @@
 20:25:01.278 [main] INFO  api.test.User.UpdateUserTests - ***Log user in the system***
 20:25:03.635 [main] INFO  api.test.User.UpdateUserTests - ******Starting TC_US_UPS_010******
 20:25:04.838 [main] INFO  api.test.User.UpdateUserTests - ******Finished TC_US_UPS_010******
+21:34:01.700 [main] INFO  api.test.User.GetUserByUsernamTests - ***Creating user***
+21:34:04.053 [main] INFO  api.test.User.GetUserByUsernamTests - ***User info created***
+21:34:04.069 [main] INFO  api.test.User.GetUserByUsernamTests - ******Starting TC_US_GUN_001******
+21:34:05.297 [main] INFO  api.test.User.GetUserByUsernamTests - ******Finished TC_US_GUN_001******
+21:34:05.304 [main] INFO  api.test.User.GetUserByUsernamTests - ******Starting TC_US_GUN_001******
+21:39:12.018 [main] INFO  api.test.User.GetUserByUsernamTests - ***Creating user***
+21:39:14.293 [main] INFO  api.test.User.GetUserByUsernamTests - ***User info created***
+21:39:14.307 [main] INFO  api.test.User.GetUserByUsernamTests - ******Starting TC_US_GUN_001******
+21:39:15.508 [main] INFO  api.test.User.GetUserByUsernamTests - ******Finished TC_US_GUN_001******
+21:39:15.519 [main] INFO  api.test.User.GetUserByUsernamTests - ******Starting TC_US_GUN_001******
+21:55:06.477 [main] INFO  api.test.User.GetUserByUsernamTests - ***Creating user***
+21:55:08.778 [main] INFO  api.test.User.GetUserByUsernamTests - ***User info created***
+21:55:08.793 [main] INFO  api.test.User.GetUserByUsernamTests - ******Starting TC_US_GUN_001******
+21:55:10.006 [main] INFO  api.test.User.GetUserByUsernamTests - ******Finished TC_US_GUN_001******
+21:55:10.016 [main] INFO  api.test.User.GetUserByUsernamTests - ******Starting TC_US_GUN_002******
+21:55:36.083 [main] INFO  api.test.User.GetUserByUsernamTests - ***Creating user***
+21:55:38.332 [main] INFO  api.test.User.GetUserByUsernamTests - ***User info created***
+21:55:38.346 [main] INFO  api.test.User.GetUserByUsernamTests - ******Starting TC_US_GUN_001******
+21:55:39.558 [main] INFO  api.test.User.GetUserByUsernamTests - ******Finished TC_US_GUN_001******
+21:55:39.562 [main] INFO  api.test.User.GetUserByUsernamTests - ******Starting TC_US_GUN_002******
+21:55:41.110 [main] INFO  api.test.User.GetUserByUsernamTests - ******Starting TC_US_GUN_003******
+21:55:42.297 [main] INFO  api.test.User.GetUserByUsernamTests - ******Finished TC_US_GUN_003******
+21:55:42.304 [main] INFO  api.test.User.GetUserByUsernamTests - ******Starting TC_US_GUN_004******
+21:55:43.513 [main] INFO  api.test.User.GetUserByUsernamTests - ******Finished TC_US_GUN_004******
+21:55:43.518 [main] INFO  api.test.User.GetUserByUsernamTests - ******Starting TC_US_GUN_005******
+21:55:44.705 [main] INFO  api.test.User.GetUserByUsernamTests - ******Finished TC_US_GUN_005******

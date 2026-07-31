@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.User.UpdateUserTests">
+      <class name="api.test.User.GetUserByUsernamTests">
         <methods>
+          <include name="responseBody"/>
           <include name="setupData"/>
-          <include name="Validation_SendRequestWithInvalidUsernameParam"/>
-          <include name="Validation_SendUpdateUserRequestWithoutLogin"/>
-          <include name="Validation_SendRequestWithInexistedUsernameParam"/>
         </methods>
-      </class> <!-- api.test.User.UpdateUserTests -->
+      </class> <!-- api.test.User.GetUserByUsernamTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
