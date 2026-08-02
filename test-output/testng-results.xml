@@ -1,33 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-31T21:55:35 GMT+07:00" name="Default suite" finished-at="2026-07-31T21:55:44 GMT+07:00" duration-ms="9043">
+  <suite started-at="2026-08-02T14:53:34 GMT+07:00" name="Default suite" finished-at="2026-08-02T14:53:55 GMT+07:00" duration-ms="21909">
     <groups>
     </groups>
-    <test started-at="2026-07-31T21:55:35 GMT+07:00" name="Default test" finished-at="2026-07-31T21:55:44 GMT+07:00" duration-ms="9043">
-      <class name="api.test.User.GetUserByUsernamTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.User.GetUserByUsernamTests@2e005c4b]" started-at="2026-07-31T21:55:35 GMT+07:00" name="setupData" finished-at="2026-07-31T21:55:38 GMT+07:00" duration-ms="2654" status="PASS">
+    <test started-at="2026-08-02T14:53:34 GMT+07:00" name="Default test" finished-at="2026-08-02T14:53:55 GMT+07:00" duration-ms="21909">
+      <class name="api.test.User.DeleteUserTests">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.User.DeleteUserTests@192d43ce]" started-at="2026-08-02T14:53:34 GMT+07:00" name="setupData" finished-at="2026-08-02T14:53:36 GMT+07:00" duration-ms="2704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method signature="mainFunctionality()[pri:1, instance:api.test.User.GetUserByUsernamTests@2e005c4b]" started-at="2026-07-31T21:55:38 GMT+07:00" name="mainFunctionality" finished-at="2026-07-31T21:55:39 GMT+07:00" duration-ms="1218" status="PASS">
+        <test-method signature="MainFunctionality()[pri:1, instance:api.test.User.DeleteUserTests@192d43ce]" started-at="2026-08-02T14:53:36 GMT+07:00" name="MainFunctionality" finished-at="2026-08-02T14:53:39 GMT+07:00" duration-ms="2421" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mainFunctionality -->
-        <test-method signature="responseBody()[pri:2, instance:api.test.User.GetUserByUsernamTests@2e005c4b]" started-at="2026-07-31T21:55:39 GMT+07:00" name="responseBody" finished-at="2026-07-31T21:55:41 GMT+07:00" duration-ms="1545" status="FAIL">
+        </test-method> <!-- MainFunctionality -->
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.User.DeleteUserTests@192d43ce]" started-at="2026-08-02T14:53:39 GMT+07:00" name="setupData" finished-at="2026-08-02T14:53:40 GMT+07:00" duration-ms="1189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupData -->
+        <test-method signature="ResponseBody()[pri:2, instance:api.test.User.DeleteUserTests@192d43ce]" started-at="2026-08-02T14:53:40 GMT+07:00" name="ResponseBody" finished-at="2026-08-02T14:53:42 GMT+07:00" duration-ms="2501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResponseBody -->
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.User.DeleteUserTests@192d43ce]" started-at="2026-08-02T14:53:42 GMT+07:00" name="setupData" finished-at="2026-08-02T14:53:44 GMT+07:00" duration-ms="1202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupData -->
+        <test-method signature="Validation_SendRequestWithoutLogin()[pri:3, instance:api.test.User.DeleteUserTests@192d43ce]" started-at="2026-08-02T14:53:44 GMT+07:00" name="Validation_SendRequestWithoutLogin" finished-at="2026-08-02T14:53:45 GMT+07:00" duration-ms="1175" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Incorrect first name! expected [Irvin] but found [null]]]>
+              <![CDATA[Incorrect status code! Found: 200 expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Incorrect first name! expected [Irvin] but found [null]
+              <![CDATA[java.lang.AssertionError: Incorrect status code! Found: 200 expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at api.test.User.GetUserByUsernamTests.responseBody(GetUserByUsernamTests.java:96)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at api.test.User.DeleteUserTests.Validation_SendRequestWithoutLogin(DeleteUserTests.java:95)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -59,20 +69,32 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- responseBody -->
-        <test-method signature="Validation_SendRequestWithInexistedUsernameParam()[pri:3, instance:api.test.User.GetUserByUsernamTests@2e005c4b]" started-at="2026-07-31T21:55:41 GMT+07:00" name="Validation_SendRequestWithInexistedUsernameParam" finished-at="2026-07-31T21:55:42 GMT+07:00" duration-ms="1188" status="PASS">
+        </test-method> <!-- Validation_SendRequestWithoutLogin -->
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.User.DeleteUserTests@192d43ce]" started-at="2026-08-02T14:53:45 GMT+07:00" name="setupData" finished-at="2026-08-02T14:53:46 GMT+07:00" duration-ms="1207" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validation_SendRequestWithInexistedUsernameParam -->
-        <test-method signature="Validation_SendRequestWithoutUsernameParam()[pri:4, instance:api.test.User.GetUserByUsernamTests@2e005c4b]" started-at="2026-07-31T21:55:42 GMT+07:00" name="Validation_SendRequestWithoutUsernameParam" finished-at="2026-07-31T21:55:43 GMT+07:00" duration-ms="1211" status="PASS">
+        </test-method> <!-- setupData -->
+        <test-method signature="Validation_SendRequestWithoutUsernameParam()[pri:4, instance:api.test.User.DeleteUserTests@192d43ce]" started-at="2026-08-02T14:53:46 GMT+07:00" name="Validation_SendRequestWithoutUsernameParam" finished-at="2026-08-02T14:53:48 GMT+07:00" duration-ms="2393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validation_SendRequestWithoutUsernameParam -->
-        <test-method signature="Validation_SendRequestInvalidUsernameParam()[pri:5, instance:api.test.User.GetUserByUsernamTests@2e005c4b]" started-at="2026-07-31T21:55:43 GMT+07:00" name="Validation_SendRequestInvalidUsernameParam" finished-at="2026-07-31T21:55:44 GMT+07:00" duration-ms="1187" status="PASS">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.User.DeleteUserTests@192d43ce]" started-at="2026-08-02T14:53:48 GMT+07:00" name="setupData" finished-at="2026-08-02T14:53:50 GMT+07:00" duration-ms="1186" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validation_SendRequestInvalidUsernameParam -->
-      </class> <!-- api.test.User.GetUserByUsernamTests -->
+        </test-method> <!-- setupData -->
+        <test-method signature="Validation_SendRequestWithInexistedUsernameParam()[pri:5, instance:api.test.User.DeleteUserTests@192d43ce]" started-at="2026-08-02T14:53:50 GMT+07:00" name="Validation_SendRequestWithInexistedUsernameParam" finished-at="2026-08-02T14:53:52 GMT+07:00" duration-ms="2351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validation_SendRequestWithInexistedUsernameParam -->
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.User.DeleteUserTests@192d43ce]" started-at="2026-08-02T14:53:52 GMT+07:00" name="setupData" finished-at="2026-08-02T14:53:53 GMT+07:00" duration-ms="1198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupData -->
+        <test-method signature="Validation_SendRequestWithInvalidUsernameParam()[pri:6, instance:api.test.User.DeleteUserTests@192d43ce]" started-at="2026-08-02T14:53:53 GMT+07:00" name="Validation_SendRequestWithInvalidUsernameParam" finished-at="2026-08-02T14:53:55 GMT+07:00" duration-ms="2349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validation_SendRequestWithInvalidUsernameParam -->
+      </class> <!-- api.test.User.DeleteUserTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

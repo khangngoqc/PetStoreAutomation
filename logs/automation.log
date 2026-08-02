@@ -4126,3 +4126,95 @@
 21:55:43.513 [main] INFO  api.test.User.GetUserByUsernamTests - ******Finished TC_US_GUN_004******
 21:55:43.518 [main] INFO  api.test.User.GetUserByUsernamTests - ******Starting TC_US_GUN_005******
 21:55:44.705 [main] INFO  api.test.User.GetUserByUsernamTests - ******Finished TC_US_GUN_005******
+14:26:06.371 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:26:08.730 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:26:08.736 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_01***
+14:26:08.736 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:26:11.131 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_01***
+14:37:03.764 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:37:06.001 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:37:06.006 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_01***
+14:37:06.006 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:37:08.381 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_01***
+14:37:08.407 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:37:09.588 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:37:09.589 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_02**
+14:37:09.589 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:37:12.088 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_02***
+14:37:12.103 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:37:13.282 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:37:13.286 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_03**
+14:42:03.016 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:42:05.256 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:42:05.262 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_01***
+14:42:05.262 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:42:07.660 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_01***
+14:42:07.685 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:42:08.880 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:42:08.881 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_02**
+14:42:08.881 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:42:11.372 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_02***
+14:42:11.387 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:42:12.562 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:42:12.565 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_03**
+14:42:13.770 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:42:14.944 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:42:14.944 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_04**
+14:42:14.944 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:42:17.312 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_04***
+14:52:17.963 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:52:20.254 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:52:20.258 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_01***
+14:52:20.260 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:52:22.657 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_01***
+14:52:22.680 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:52:23.862 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:52:23.863 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_02**
+14:52:23.863 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:52:26.339 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_02***
+14:52:26.355 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:52:27.549 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:52:27.550 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_03**
+14:52:28.773 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:52:29.943 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:52:29.947 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_04**
+14:52:29.947 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:52:32.347 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_04***
+14:52:32.359 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:52:33.539 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:52:33.542 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_05**
+14:52:33.542 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:52:35.900 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_05***
+14:52:35.919 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:52:37.106 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:52:37.107 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_06**
+14:52:37.107 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:52:39.457 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_06 ***
+14:53:34.452 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:53:36.731 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:53:36.736 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_01***
+14:53:36.736 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:53:39.153 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_01***
+14:53:39.172 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:53:40.345 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:53:40.347 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_02**
+14:53:40.347 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:53:42.846 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_02***
+14:53:42.859 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:53:44.049 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:53:44.050 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_03**
+14:53:45.243 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:53:46.434 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:53:46.435 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_04**
+14:53:46.435 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:53:48.827 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_04***
+14:53:48.843 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:53:50.015 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:53:50.016 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_05**
+14:53:50.016 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:53:52.365 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_05***
+14:53:52.373 [main] INFO  api.test.User.DeleteUserTests - ***Creating user***
+14:53:53.565 [main] INFO  api.test.User.DeleteUserTests - ***User info created***
+14:53:53.566 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_06**
+14:53:53.566 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
+14:53:55.914 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_06 ***

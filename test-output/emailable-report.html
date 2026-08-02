@@ -9,17 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">9.043</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">21.909</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">api.test.User.GetUserByUsernamTests</td><td><a href="#m0">responseBody</a></td><td rowspan="1">1785509739562</td><td rowspan="1">1545</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">api.test.User.GetUserByUsernamTests</td><td><a href="#m1">Validation_SendRequestInvalidUsernameParam</a></td><td rowspan="1">1785509743518</td><td rowspan="1">1187</td></tr><tr class="passedeven"><td><a href="#m2">Validation_SendRequestWithInexistedUsernameParam</a></td><td rowspan="1">1785509741110</td><td rowspan="1">1188</td></tr><tr class="passedeven"><td><a href="#m3">Validation_SendRequestWithoutUsernameParam</a></td><td rowspan="1">1785509742302</td><td rowspan="1">1211</td></tr><tr class="passedeven"><td><a href="#m4">mainFunctionality</a></td><td rowspan="1">1785509738341</td><td rowspan="1">1218</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">api.test.User.DeleteUserTests</td><td><a href="#m0">Validation_SendRequestWithoutLogin</a></td><td rowspan="1">1785657224050</td><td rowspan="1">1175</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">api.test.User.DeleteUserTests</td><td><a href="#m1">MainFunctionality</a></td><td rowspan="1">1785657216732</td><td rowspan="1">2421</td></tr><tr class="passedeven"><td><a href="#m2">ResponseBody</a></td><td rowspan="1">1785657220345</td><td rowspan="1">2501</td></tr><tr class="passedeven"><td><a href="#m3">Validation_SendRequestWithInexistedUsernameParam</a></td><td rowspan="1">1785657230015</td><td rowspan="1">2351</td></tr><tr class="passedeven"><td><a href="#m4">Validation_SendRequestWithInvalidUsernameParam</a></td><td rowspan="1">1785657233565</td><td rowspan="1">2349</td></tr><tr class="passedeven"><td><a href="#m5">Validation_SendRequestWithoutUsernameParam</a></td><td rowspan="1">1785657226434</td><td rowspan="1">2393</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">api.test.User.GetUserByUsernamTests#responseBody</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Incorrect first name! expected [Irvin] but found [null]
+<h2>Default test</h2><h3 id="m0">api.test.User.DeleteUserTests#Validation_SendRequestWithoutLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Incorrect status code! Found: 200 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at api.test.User.GetUserByUsernamTests.responseBody(GetUserByUsernamTests.java:96)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at api.test.User.DeleteUserTests.Validation_SendRequestWithoutLogin(DeleteUserTests.java:95)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -47,9 +45,10 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">api.test.User.GetUserByUsernamTests#Validation_SendRequestInvalidUsernameParam</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">api.test.User.GetUserByUsernamTests#Validation_SendRequestWithInexistedUsernameParam</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">api.test.User.GetUserByUsernamTests#Validation_SendRequestWithoutUsernameParam</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">api.test.User.GetUserByUsernamTests#mainFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">api.test.User.DeleteUserTests#MainFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">api.test.User.DeleteUserTests#ResponseBody</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">api.test.User.DeleteUserTests#Validation_SendRequestWithInexistedUsernameParam</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">api.test.User.DeleteUserTests#Validation_SendRequestWithInvalidUsernameParam</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">api.test.User.DeleteUserTests#Validation_SendRequestWithoutUsernameParam</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

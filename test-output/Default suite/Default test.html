@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 31 21:55:35 GMT+07:00 2026</td>
+<td>Started on:</td><td>Sun Aug 02 14:53:34 GMT+07:00 2026</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9043 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21909 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.User.GetUserByUsernamTests.responseBody()'><b>responseBody</b><br>Test class: api.test.User.GetUserByUsernamTests</td>
-<td><div><pre>java.lang.AssertionError: Incorrect first name! expected [Irvin] but found [null]
+<td title='api.test.User.DeleteUserTests.Validation_SendRequestWithoutLogin()'><b>Validation_SendRequestWithoutLogin</b><br>Test class: api.test.User.DeleteUserTests</td>
+<td><div><pre>java.lang.AssertionError: Incorrect status code! Found: 200 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at api.test.User.GetUserByUsernamTests.responseBody(GetUserByUsernamTests.java:96)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at api.test.User.DeleteUserTests.Validation_SendRequestWithoutLogin(DeleteUserTests.java:95)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -110,14 +108,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1359574272", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1359574272'><pre>java.lang.AssertionError: Incorrect first name! expected [Irvin] but found [null]
+</pre></div><a href='#' onClick='toggleBox("stack-trace777205720", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace777205720'><pre>java.lang.AssertionError: Incorrect status code! Found: 200 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at api.test.User.GetUserByUsernamTests.responseBody(GetUserByUsernamTests.java:96)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at api.test.User.DeleteUserTests.Validation_SendRequestWithoutLogin(DeleteUserTests.java:95)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -146,7 +142,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>1</td>
-<td>api.test.User.GetUserByUsernamTests@2e005c4b</td></tr>
+<td>api.test.User.DeleteUserTests@192d43ce</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -157,25 +153,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.User.GetUserByUsernamTests.Validation_SendRequestWithoutUsernameParam()'><b>Validation_SendRequestWithoutUsernameParam</b><br>Test class: api.test.User.GetUserByUsernamTests</td>
+<td title='api.test.User.DeleteUserTests.MainFunctionality()'><b>MainFunctionality</b><br>Test class: api.test.User.DeleteUserTests</td>
 <td></td>
-<td>1</td>
-<td>api.test.User.GetUserByUsernamTests@2e005c4b</td></tr>
+<td>2</td>
+<td>api.test.User.DeleteUserTests@192d43ce</td></tr>
 <tr>
-<td title='api.test.User.GetUserByUsernamTests.mainFunctionality()'><b>mainFunctionality</b><br>Test class: api.test.User.GetUserByUsernamTests</td>
+<td title='api.test.User.DeleteUserTests.Validation_SendRequestWithoutUsernameParam()'><b>Validation_SendRequestWithoutUsernameParam</b><br>Test class: api.test.User.DeleteUserTests</td>
 <td></td>
-<td>1</td>
-<td>api.test.User.GetUserByUsernamTests@2e005c4b</td></tr>
+<td>2</td>
+<td>api.test.User.DeleteUserTests@192d43ce</td></tr>
 <tr>
-<td title='api.test.User.GetUserByUsernamTests.Validation_SendRequestWithInexistedUsernameParam()'><b>Validation_SendRequestWithInexistedUsernameParam</b><br>Test class: api.test.User.GetUserByUsernamTests</td>
+<td title='api.test.User.DeleteUserTests.ResponseBody()'><b>ResponseBody</b><br>Test class: api.test.User.DeleteUserTests</td>
 <td></td>
-<td>1</td>
-<td>api.test.User.GetUserByUsernamTests@2e005c4b</td></tr>
+<td>2</td>
+<td>api.test.User.DeleteUserTests@192d43ce</td></tr>
 <tr>
-<td title='api.test.User.GetUserByUsernamTests.Validation_SendRequestInvalidUsernameParam()'><b>Validation_SendRequestInvalidUsernameParam</b><br>Test class: api.test.User.GetUserByUsernamTests</td>
+<td title='api.test.User.DeleteUserTests.Validation_SendRequestWithInexistedUsernameParam()'><b>Validation_SendRequestWithInexistedUsernameParam</b><br>Test class: api.test.User.DeleteUserTests</td>
 <td></td>
-<td>1</td>
-<td>api.test.User.GetUserByUsernamTests@2e005c4b</td></tr>
+<td>2</td>
+<td>api.test.User.DeleteUserTests@192d43ce</td></tr>
+<tr>
+<td title='api.test.User.DeleteUserTests.Validation_SendRequestWithInvalidUsernameParam()'><b>Validation_SendRequestWithInvalidUsernameParam</b><br>Test class: api.test.User.DeleteUserTests</td>
+<td></td>
+<td>2</td>
+<td>api.test.User.DeleteUserTests@192d43ce</td></tr>
 </table><p>
 </body>
 </html>
