@@ -2,6 +2,9 @@ package api.endpoints;
 
 import static io.restassured.RestAssured.given;
 
+import java.util.List;
+import java.util.Map;
+
 import api.payload.User;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;	
@@ -77,6 +80,19 @@ public class UserEndPoints {
 			.get(Routes.login_url);
 		
 		return res;
+	}
+	
+	public static Response createListofUser(List<User> users) {
+		
+		Response res = given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				.body(users)
+			.when()
+				.post(Routes.post_createWithListArray_url);
+			
+			return res;
+		
 	}
 	
 	

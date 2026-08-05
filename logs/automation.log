@@ -4218,3 +4218,32 @@
 14:53:53.566 [main] INFO  api.test.User.DeleteUserTests - ***Starting TC_US_DLU_06**
 14:53:53.566 [main] INFO  api.test.User.DeleteUserTests - ***Log user in the system***
 14:53:55.914 [main] INFO  api.test.User.DeleteUserTests - ***Finished TC_US_DLU_06 ***
+20:56:37.359 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLU_001***
+20:57:01.541 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLU_001***
+21:05:05.129 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLU_001***
+21:05:07.435 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_CLU_001***
+21:07:56.475 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLU_001***
+21:07:58.892 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_CLU_001***
+21:07:58.897 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLU_002**
+21:08:00.286 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_CLU_002***
+21:25:23.294 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLU_001***
+21:25:25.705 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_CLU_001***
+21:25:25.710 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLU_002**
+21:25:27.042 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_CLU_002***
+21:25:27.045 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLU_003***
+21:25:28.245 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_CLU_003***
+21:25:28.248 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Intialize test data***
+21:25:28.249 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_GUN_004***
+21:25:29.435 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_GUN_004***
+21:25:29.438 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ******Starting TC_US_CLU_005******
+21:25:30.609 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ******Finished TC_US_CLU_005******
+21:26:37.833 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLU_001***
+21:26:40.282 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_CLU_001***
+21:26:40.287 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLU_002**
+21:26:41.641 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_CLU_002***
+21:26:41.644 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLU_003***
+21:26:42.877 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_CLU_003***
+21:26:42.878 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Intialize test data***
+21:26:42.879 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_GUN_004***
+21:26:44.119 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ******Starting TC_US_CLU_005******
+21:26:45.351 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ******Finished TC_US_CLU_005******
