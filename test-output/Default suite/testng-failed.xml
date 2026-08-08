@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.User.CreatesListOfUserWithGivenInputArrayTests">
+      <class name="api.test.User.LogUserIntoTheSystem">
         <methods>
-          <include name="setupData"/>
-          <include name="Validation_SendRequestWithInsufficientBody"/>
+          <include name="Setup"/>
+          <include name="Validation_sendRequestWithoutPasswordParams"/>
+          <include name="Validation_sendRequestWithoutParams"/>
+          <include name="Validation_sendRequestWithInavalidPasswordParams"/>
+          <include name="Validation_sendRequestWithInavalidUsernameParams"/>
+          <include name="Validation_sendRequestWithoutUsernameParams"/>
         </methods>
-      </class> <!-- api.test.User.CreatesListOfUserWithGivenInputArrayTests -->
+      </class> <!-- api.test.User.LogUserIntoTheSystem -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

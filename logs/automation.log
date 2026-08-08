@@ -4247,3 +4247,12 @@
 21:26:42.879 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_GUN_004***
 21:26:44.119 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ******Starting TC_US_CLU_005******
 21:26:45.351 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ******Finished TC_US_CLU_005******
+21:31:28.351 [main] INFO  api.test.User.LogUserIntoTheSystem - ***Starting TC_US_LGI_01***
+21:31:30.505 [main] INFO  api.test.User.LogUserIntoTheSystem - ***Finished TC_US_LGI_01***
+21:31:30.508 [main] INFO  api.test.User.LogUserIntoTheSystem - ***Starting TC_US_LGI_02***
+21:31:31.909 [main] INFO  api.test.User.LogUserIntoTheSystem - ***Finished TC_US_LGI_02***
+21:31:31.911 [main] INFO  api.test.User.LogUserIntoTheSystem - ***Starting TC_US_LGI_03***
+21:31:33.097 [main] INFO  api.test.User.LogUserIntoTheSystem - ***Starting TC_US_LGI_04_A***
+21:31:34.285 [main] INFO  api.test.User.LogUserIntoTheSystem - ***Starting TC_US_LGI_04_B***
+21:31:35.486 [main] INFO  api.test.User.LogUserIntoTheSystem - ***Starting TC_US_LGI_05***
+21:31:36.669 [main] INFO  api.test.User.LogUserIntoTheSystem - ***Starting TC_US_LGI_06***
