@@ -82,6 +82,17 @@ public class UserEndPoints {
 		return res;
 	}
 	
+	public static Response logoutUser() {
+		Response res  = given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				
+			.when()
+					.get(Routes.logout_url);
+		
+		return res;
+	}
+	
 	public static Response createListofUser(List<User> users) {
 		
 		Response res = given()
@@ -94,10 +105,6 @@ public class UserEndPoints {
 			return res;
 		
 	}
-	
-	
-	
-	
 	
 	
 
