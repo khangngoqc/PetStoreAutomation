@@ -4299,3 +4299,15 @@
 19:12:14.009 [main] INFO  api.test.User.LogoutCurrentLoggedInUserTests - ***Log user in the system***
 19:12:15.285 [main] INFO  api.test.User.LogoutCurrentLoggedInUserTests - ***Send logout request***
 19:12:16.541 [main] INFO  api.test.User.LogoutCurrentLoggedInUserTests - ******Finished TC_US_LGO_01******
+19:28:49.739 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLUA_01***
+19:28:52.209 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_CLUA_01***
+19:32:07.201 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLUA_01***
+19:32:09.615 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_CLUA_01***
+19:32:09.621 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLU_002**
+19:32:11.099 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_CLU_002***
+19:32:11.102 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_CLUA_003***
+19:32:12.381 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Finished TC_US_CLUA_003***
+19:32:12.389 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Intialize test data***
+19:32:12.393 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ***Starting TC_US_GUNA_004***
+19:32:13.704 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ******Starting TC_US_CLUA_005******
+19:32:15.011 [main] INFO  api.test.User.CreatesListOfUserWithGivenInputArrayTests - ******Finished TC_US_CLUA_005******

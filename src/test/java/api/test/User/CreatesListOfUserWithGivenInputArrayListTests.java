@@ -2,7 +2,6 @@ package api.test.User;
 
 import static io.restassured.RestAssured.given;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -22,7 +21,7 @@ import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
-public class CreatesListOfUserWithGivenInputArrayTests {
+public class CreatesListOfUserWithGivenInputArrayListTests {
 
 	Faker faker;
 
@@ -53,21 +52,21 @@ public class CreatesListOfUserWithGivenInputArrayTests {
 
 	@Test
 	public void MainFunctionality() {
-		logger.info("***Starting TC_US_CLUA_01***");
-		Response res = UserEndPoints.createListofUserFromArray(this.users);
+		logger.info("***Starting TC_US_CLU_001***");
+		Response res = UserEndPoints.createListofUser(this.users);
 		res.then().log().body();
 
 		Assert.assertEquals(res.getStatusCode(), 200);
 		Assert.assertTrue(res.getBody() != null);
 
-		logger.info("***Finished TC_US_CLUA_01***");
+		logger.info("***Finished TC_US_CLU_001***");
 	}
 
 	@Test(priority = 2)
 	public void ResponseBody() {
 		logger.info("***Starting TC_US_CLU_002**");
 
-		Response res = UserEndPoints.createListofUserFromArray(this.users);
+		Response res = UserEndPoints.createListofUser(this.users);
 		res.then().log().body();
 
 		res.then().assertThat().statusCode(200).body(JsonSchemaValidator.matchesJsonSchema(minimalSchema));
@@ -78,16 +77,16 @@ public class CreatesListOfUserWithGivenInputArrayTests {
 
 	@Test(priority = 3)
 	public void Validation_SendRequestWithoutBody() {
-		logger.info("***Starting TC_US_CLUA_003***");
+		logger.info("***Starting TC_US_CLU_003***");
 		Response res = given().contentType(ContentType.JSON).accept(ContentType.JSON).when()
-				.post(Routes.post_createWithArray_url);
+				.post(Routes.post_createWithListArray_url);
 
 		res.then().log().body();
 
 		Assert.assertTrue(res.getStatusCode() >= 400);
 		Assert.assertTrue(res.getBody() != null);
 
-		logger.info("***Finished TC_US_CLUA_003***");
+		logger.info("***Finished TC_US_CLU_003***");
 	}
 
 	
@@ -102,23 +101,23 @@ public class CreatesListOfUserWithGivenInputArrayTests {
 						faker.phoneNumber().cellPhone(), faker.random().nextInt(0, 2)),
 				new User(faker.number().randomDigit(), faker.name().username(), faker.name().firstName()));
 
-		logger.info("***Starting TC_US_GUNA_004***");
+		logger.info("***Starting TC_US_GUN_004***");
 
 		Response res = given().contentType(ContentType.JSON).accept(ContentType.JSON).body(users_2).when()
-				.post(Routes.post_createWithArray_url);
+				.post(Routes.post_createWithListArray_url);
 
 		res.then().log().body();
 
 		Assert.assertTrue(res.getStatusCode() >= 400);
 		Assert.assertTrue(res.getBody() != null);
 
-		logger.info("***Finished TC_US_GUNA_004***");
+		logger.info("***Finished TC_US_GUN_004***");
 	}
 
 	
 	@Test(priority = 5)
 	public void Validation_SendRequestWithInvalidDataType() {
-		logger.info("******Starting TC_US_CLUA_005******");
+		logger.info("******Starting TC_US_CLU_005******");
 
 		HashMap data = new HashMap();
 		data.put("id", true);
@@ -133,14 +132,14 @@ public class CreatesListOfUserWithGivenInputArrayTests {
 		List<HashMap> users_2 = Arrays.asList(data);
 
 		Response res = given().contentType(ContentType.JSON).accept(ContentType.JSON).body(users_2).when()
-				.post(Routes.post_createWithArray_url);
+				.post(Routes.post_createWithListArray_url);
 
 		res.then().log().body();
 
 		Assert.assertTrue(res.getStatusCode() >= 400);
 		Assert.assertTrue(res.getBody() != null);
 
-		logger.info("******Finished TC_US_CLUA_005******");
+		logger.info("******Finished TC_US_CLU_005******");
 	}
 
 }
