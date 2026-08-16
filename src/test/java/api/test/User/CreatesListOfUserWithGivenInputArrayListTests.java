@@ -54,7 +54,7 @@ public class CreatesListOfUserWithGivenInputArrayListTests {
 	public void MainFunctionality() {
 		logger.info("***Starting TC_US_CLU_001***");
 		Response res = UserEndPoints.createListofUser(this.users);
-		res.then().log().body();
+		res.then().log().all();
 
 		Assert.assertEquals(res.getStatusCode(), 200);
 		Assert.assertTrue(res.getBody() != null);
