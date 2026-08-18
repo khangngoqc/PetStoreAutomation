@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Order",
+  "description": "Schema for the response body of POST /v2/store/order",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Order ID"
+    },
+    "petId": {
+      "type": "integer",
+      "description": "ID of the pet associated with this order"
+    },
+    "quantity": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "shipDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 date-time string. Petstore's live API returns offset form e.g. 2026-12-26T06:36:27.556+0000 (some environments return Z form e.g. 2026-06-21T15:14:23.519Z)",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:?\\d{2})$"
+    },
+    "status": {
+      "type": "string",
+      "description": "Order status in the store",
+      "enum": ["placed", "approved", "delivered"]
+    },
+    "complete": {
+      "type": "boolean"
+    }
+  },
+  "required": ["id", "petId", "quantity", "shipDate", "status", "complete"],
+  "additionalProperties": false
+}

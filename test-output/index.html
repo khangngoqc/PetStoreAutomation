@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse-930252359\testng-customsuite.xml</span>
+                    <span>C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse--25930490\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,12 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="api.test.Store.ReturnPetInvertoriesByStatusTests" class="method navigator-link" hash-for-method="MainFunctionaility">MainFunctionaility</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="api.test.Store.ReturnPetInvertoriesByStatusTests" class="method navigator-link" hash-for-method="ResponseBody">ResponseBody</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="api.test.Store.PlaceAnOrderForAPetTests" class="method navigator-link" hash-for-method="Validation_SendRquestInsufficientBody">Validation_SendRquestInsufficientBody</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -126,93 +121,19 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">api.test.Store.ReturnPetInvertoriesByStatusTests</span>
+              <span class="class-name">api.test.Store.PlaceAnOrderForAPetTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="MainFunctionaility">
-                  </a> <!-- MainFunctionaility -->
-                  <span class="method-name">MainFunctionaility</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-JSON path additionalProp1 doesn&apos;t match.
-Expected: &lt;0&gt;
-  Actual: null
-
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:274)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:121)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-	at api.test.Store.ReturnPetInvertoriesByStatusTests.MainFunctionaility(ReturnPetInvertoriesByStatusTests.java:34)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ResponseBody">
-                  </a> <!-- ResponseBody -->
-                  <span class="method-name">ResponseBody</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Response body doesn&apos;t match expectation.
-Expected: The content to match the given JSON schema.
-error: object instance has properties which are not allowed by the schema: [&quot;Not Available&quot;,&quot;available&quot;,&quot;not-a-real-status&quot;,&quot;pending&quot;,&quot;sold&quot;,&quot;string&quot;]
-    level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;file:/D:/Personal/Learning/API%20Testing/SDET-QA_API%20Testing/RestAssured/restAssuredTraining/PetStoreAutomation/target/test-classes/Inventory-schema-JSON.json#&quot;,&quot;pointer&quot;:&quot;&quot;}
-    instance: {&quot;pointer&quot;:&quot;&quot;}
-    domain: &quot;validation&quot;
-    keyword: &quot;additionalProperties&quot;
-    unwanted: [&quot;Not Available&quot;,&quot;available&quot;,&quot;not-a-real-status&quot;,&quot;pending&quot;,&quot;sold&quot;,&quot;string&quot;]
-error: object has missing required properties ([&quot;additionalProp1&quot;,&quot;additionalProp2&quot;,&quot;additionalProp3&quot;])
-    level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;file:/D:/Personal/Learning/API%20Testing/SDET-QA_API%20Testing/RestAssured/restAssuredTraining/PetStoreAutomation/target/test-classes/Inventory-schema-JSON.json#&quot;,&quot;pointer&quot;:&quot;&quot;}
-    instance: {&quot;pointer&quot;:&quot;&quot;}
-    domain: &quot;validation&quot;
-    keyword: &quot;required&quot;
-    required: [&quot;additionalProp1&quot;,&quot;additionalProp2&quot;,&quot;additionalProp3&quot;]
-    missing: [&quot;additionalProp1&quot;,&quot;additionalProp2&quot;,&quot;additionalProp3&quot;]
-
-  Actual: {&quot;sold&quot;:459,&quot;not-a-real-status&quot;:2,&quot;string&quot;:150,&quot;pending&quot;:30,&quot;available&quot;:168,&quot;Not Available&quot;:1}
-
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:111)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-	at api.test.Store.ReturnPetInvertoriesByStatusTests.ResponseBody(ReturnPetInvertoriesByStatusTests.java:53)
+                  <a name="Validation_SendRquestInsufficientBody">
+                  </a> <!-- Validation_SendRquestInsufficientBody -->
+                  <span class="method-name">Validation_SendRquestInsufficientBody</span>
+                  <div class="stack-trace">java.lang.AssertionError: Unexpected status code! | 200 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at api.test.Store.PlaceAnOrderForAPetTests.Validation_SendRquestInsufficientBody(PlaceAnOrderForAPetTests.java:171)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -248,7 +169,7 @@ error: object has missing required properties ([&quot;additionalProp1&quot;,&quo
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse-930252359\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse--25930490\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -257,7 +178,11 @@ error: object has missing required properties ([&quot;additionalProp1&quot;,&quo
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;api.test.Store.ReturnPetInvertoriesByStatusTests&quot;/&gt;
+      &lt;class name=&quot;api.test.Store.PlaceAnOrderForAPetTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Validation_SendRquestInsufficientBody&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- api.test.Store.PlaceAnOrderForAPetTests --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -297,20 +222,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'MainFunctionaility')
-data.setCell(0, 2, 'api.test.Store.ReturnPetInvertoriesByStatusTests')
-data.setCell(0, 3, 2507);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ResponseBody')
-data.setCell(1, 2, 'api.test.Store.ReturnPetInvertoriesByStatusTests')
-data.setCell(1, 3, 1465);
+data.setCell(0, 1, 'Validation_SendRquestInsufficientBody')
+data.setCell(0, 2, 'api.test.Store.PlaceAnOrderForAPetTests')
+data.setCell(0, 3, 2364);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -325,9 +246,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">api.test.Store.PlaceAnOrderForAPetTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">MainFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">Validation_SendRquestWithInvalidBody</span>
+                <br/>
+                <span class="ignored-method-name">Validation_SendRquestWithoutBody</span>
+                <br/>
+                <span class="ignored-method-name">ResponseBody</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -336,22 +270,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">api.test.Store.ReturnPetInvertoriesByStatusTests</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="chronological-class-name">api.test.Store.PlaceAnOrderForAPetTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">MainFunctionaility</span>
-                <span class="method-start">266 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">ResponseBody</span>
-                <span class="method-start">2775 ms</span>
+                <span class="method-name">Validation_SendRquestInsufficientBody</span>
+                <span class="method-start">306 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

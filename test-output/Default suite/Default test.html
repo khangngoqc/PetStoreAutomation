@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 16 19:48:55 GMT+07:00 2026</td>
+<td>Started on:</td><td>Tue Aug 18 21:24:40 GMT+07:00 2026</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4256 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2680 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.Store.ReturnPetInvertoriesByStatusTests.MainFunctionaility()'><b>MainFunctionaility</b><br>Test class: api.test.Store.ReturnPetInvertoriesByStatusTests</td>
-<td><div><pre>java.lang.AssertionError: 1 expectation failed.
-JSON path additionalProp1 doesn&apos;t match.
-Expected: &lt;0&gt;
-  Actual: null
-
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:274)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:121)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-	at api.test.Store.ReturnPetInvertoriesByStatusTests.MainFunctionaility(ReturnPetInvertoriesByStatusTests.java:34)
+<td title='api.test.Store.PlaceAnOrderForAPetTests.Validation_SendRquestInsufficientBody()'><b>Validation_SendRquestInsufficientBody</b><br>Test class: api.test.Store.PlaceAnOrderForAPetTests</td>
+<td><div><pre>java.lang.AssertionError: Unexpected status code! | 200 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at api.test.Store.PlaceAnOrderForAPetTests.Validation_SendRquestInsufficientBody(PlaceAnOrderForAPetTests.java:171)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -118,22 +108,12 @@ Expected: &lt;0&gt;
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1822115007", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1822115007'><pre>java.lang.AssertionError: 1 expectation failed.
-JSON path additionalProp1 doesn&apos;t match.
-Expected: &lt;0&gt;
-  Actual: null
-
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:274)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:121)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-	at api.test.Store.ReturnPetInvertoriesByStatusTests.MainFunctionaility(ReturnPetInvertoriesByStatusTests.java:34)
+</pre></div><a href='#' onClick='toggleBox("stack-trace407380973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace407380973'><pre>java.lang.AssertionError: Unexpected status code! | 200 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at api.test.Store.PlaceAnOrderForAPetTests.Validation_SendRquestInsufficientBody(PlaceAnOrderForAPetTests.java:171)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -162,123 +142,7 @@ Expected: &lt;0&gt;
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>2</td>
-<td>api.test.Store.ReturnPetInvertoriesByStatusTests@5af3afd9</td></tr>
-<tr>
-<td title='api.test.Store.ReturnPetInvertoriesByStatusTests.ResponseBody()'><b>ResponseBody</b><br>Test class: api.test.Store.ReturnPetInvertoriesByStatusTests</td>
-<td><div><pre>java.lang.AssertionError: 1 expectation failed.
-Response body doesn&apos;t match expectation.
-Expected: The content to match the given JSON schema.
-error: object instance has properties which are not allowed by the schema: [&quot;Not Available&quot;,&quot;available&quot;,&quot;not-a-real-status&quot;,&quot;pending&quot;,&quot;sold&quot;,&quot;string&quot;]
-    level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;file:/D:/Personal/Learning/API%20Testing/SDET-QA_API%20Testing/RestAssured/restAssuredTraining/PetStoreAutomation/target/test-classes/Inventory-schema-JSON.json#&quot;,&quot;pointer&quot;:&quot;&quot;}
-    instance: {&quot;pointer&quot;:&quot;&quot;}
-    domain: &quot;validation&quot;
-    keyword: &quot;additionalProperties&quot;
-    unwanted: [&quot;Not Available&quot;,&quot;available&quot;,&quot;not-a-real-status&quot;,&quot;pending&quot;,&quot;sold&quot;,&quot;string&quot;]
-error: object has missing required properties ([&quot;additionalProp1&quot;,&quot;additionalProp2&quot;,&quot;additionalProp3&quot;])
-    level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;file:/D:/Personal/Learning/API%20Testing/SDET-QA_API%20Testing/RestAssured/restAssuredTraining/PetStoreAutomation/target/test-classes/Inventory-schema-JSON.json#&quot;,&quot;pointer&quot;:&quot;&quot;}
-    instance: {&quot;pointer&quot;:&quot;&quot;}
-    domain: &quot;validation&quot;
-    keyword: &quot;required&quot;
-    required: [&quot;additionalProp1&quot;,&quot;additionalProp2&quot;,&quot;additionalProp3&quot;]
-    missing: [&quot;additionalProp1&quot;,&quot;additionalProp2&quot;,&quot;additionalProp3&quot;]
-
-  Actual: {&quot;sold&quot;:459,&quot;not-a-real-status&quot;:2,&quot;string&quot;:150,&quot;pending&quot;:30,&quot;available&quot;:168,&quot;Not Available&quot;:1}
-
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:111)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-	at api.test.Store.ReturnPetInvertoriesByStatusTests.ResponseBody(ReturnPetInvertoriesByStatusTests.java:53)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace422619140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace422619140'><pre>java.lang.AssertionError: 1 expectation failed.
-Response body doesn&apos;t match expectation.
-Expected: The content to match the given JSON schema.
-error: object instance has properties which are not allowed by the schema: [&quot;Not Available&quot;,&quot;available&quot;,&quot;not-a-real-status&quot;,&quot;pending&quot;,&quot;sold&quot;,&quot;string&quot;]
-    level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;file:/D:/Personal/Learning/API%20Testing/SDET-QA_API%20Testing/RestAssured/restAssuredTraining/PetStoreAutomation/target/test-classes/Inventory-schema-JSON.json#&quot;,&quot;pointer&quot;:&quot;&quot;}
-    instance: {&quot;pointer&quot;:&quot;&quot;}
-    domain: &quot;validation&quot;
-    keyword: &quot;additionalProperties&quot;
-    unwanted: [&quot;Not Available&quot;,&quot;available&quot;,&quot;not-a-real-status&quot;,&quot;pending&quot;,&quot;sold&quot;,&quot;string&quot;]
-error: object has missing required properties ([&quot;additionalProp1&quot;,&quot;additionalProp2&quot;,&quot;additionalProp3&quot;])
-    level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;file:/D:/Personal/Learning/API%20Testing/SDET-QA_API%20Testing/RestAssured/restAssuredTraining/PetStoreAutomation/target/test-classes/Inventory-schema-JSON.json#&quot;,&quot;pointer&quot;:&quot;&quot;}
-    instance: {&quot;pointer&quot;:&quot;&quot;}
-    domain: &quot;validation&quot;
-    keyword: &quot;required&quot;
-    required: [&quot;additionalProp1&quot;,&quot;additionalProp2&quot;,&quot;additionalProp3&quot;]
-    missing: [&quot;additionalProp1&quot;,&quot;additionalProp2&quot;,&quot;additionalProp3&quot;]
-
-  Actual: {&quot;sold&quot;:459,&quot;not-a-real-status&quot;:2,&quot;string&quot;:150,&quot;pending&quot;:30,&quot;available&quot;:168,&quot;Not Available&quot;:1}
-
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:111)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-	at api.test.Store.ReturnPetInvertoriesByStatusTests.ResponseBody(ReturnPetInvertoriesByStatusTests.java:53)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>1</td>
-<td>api.test.Store.ReturnPetInvertoriesByStatusTests@5af3afd9</td></tr>
+<td>api.test.Store.PlaceAnOrderForAPetTests@4f18837a</td></tr>
 </table><p>
 </body>
 </html>

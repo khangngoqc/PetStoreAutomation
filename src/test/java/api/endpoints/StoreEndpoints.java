@@ -1,8 +1,10 @@
 package api.endpoints;
 
+import static io.restassured.RestAssured.given;
+
+import api.payload.Order;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import static io.restassured.RestAssured.given;
 
 public class StoreEndpoints {
 	
@@ -17,5 +19,18 @@ public class StoreEndpoints {
 		
 		return res;		
 	}
+	
+	public static Response placeAnOrder(Order order) {
+		
+		Response res = given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				.body(order)
+			.when()
+				.post(Routes.post_placeAnOrderForAPet_url);
+		return res;
+	}
+	
+	
 
 }

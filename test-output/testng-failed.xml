@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.Store.ReturnPetInvertoriesByStatusTests">
+      <class name="api.test.Store.PlaceAnOrderForAPetTests">
         <methods>
-          <include name="ResponseBody"/>
           <include name="setup"/>
-          <include name="MainFunctionaility"/>
+          <include name="Validation_SendRquestInsufficientBody"/>
         </methods>
-      </class> <!-- api.test.Store.ReturnPetInvertoriesByStatusTests -->
+      </class> <!-- api.test.Store.PlaceAnOrderForAPetTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
