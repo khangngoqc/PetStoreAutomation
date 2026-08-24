@@ -31,6 +31,18 @@ public class StoreEndpoints {
 		return res;
 	}
 	
+	public static Response findOrderById(String id) {
+		
+		Response res = given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				.pathParam("orderId", id)
+				.when()
+					.get(Routes.get_findPurchaseOrderById_url);
+		
+		return res;
+		
+	}
 	
 
 }
