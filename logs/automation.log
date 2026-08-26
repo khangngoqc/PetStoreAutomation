@@ -4395,3 +4395,10 @@
 22:33:23.829 [main] INFO  api.test.Store.FindPurchaseOrderByIdTests - ***Starting TC_ST_FP_03***
 22:33:23.830 [main] INFO  api.test.Store.FindPurchaseOrderByIdTests - ***Starting TC_ST_FP_03***
 22:33:25.122 [main] INFO  api.test.Store.FindPurchaseOrderByIdTests - ***Starting TC_ST_FP_03***
+21:24:28.373 [main] INFO  api.test.Store.DeletePurchaseOrderByIdTests - ***Starting TC_ST_DP_02***
+21:24:29.829 [main] INFO  api.test.Store.DeletePurchaseOrderByIdTests - ***Starting TC_ST_DP_02***
+21:38:12.681 [main] INFO  api.test.Store.DeletePurchaseOrderByIdTests - ***Starting TC_ST_DP_01***
+21:38:15.309 [main] INFO  api.test.Store.DeletePurchaseOrderByIdTests - ***Starting TC_ST_DP_02***
+21:39:52.825 [main] INFO  api.test.Store.DeletePurchaseOrderByIdTests - ***Starting TC_ST_DP_01***
+21:39:56.792 [main] INFO  api.test.Store.DeletePurchaseOrderByIdTests - ***Starting TC_ST_DP_02***
+21:39:58.151 [main] INFO  api.test.Store.DeletePurchaseOrderByIdTests - ***Starting TC_ST_DP_02***

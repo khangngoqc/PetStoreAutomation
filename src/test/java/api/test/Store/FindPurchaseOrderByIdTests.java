@@ -101,7 +101,7 @@ public class FindPurchaseOrderByIdTests {
 		res.then().statusCode(200);
 		Assert.assertTrue(res.getBody() != null);
 
-		logger.info("***Starting TC_ST_FP_01***");
+		logger.info("***Finshed TC_ST_FP_01***");
 
 	}
 
@@ -127,7 +127,7 @@ public class FindPurchaseOrderByIdTests {
 		Assert.assertEquals(responseOrder.getStatus(), this.orderPayload.getStatus());
 		Assert.assertEquals(responseOrder.isComplete(), this.orderPayload.isComplete());
 
-		logger.info("***Starting TC_ST_FP_02***");
+		logger.info("***Finshed TC_ST_FP_02***");
 
 	}
 
@@ -145,7 +145,7 @@ public class FindPurchaseOrderByIdTests {
 		Assert.assertTrue(res.getStatusCode() >= 400, "Unexpected status code! | " + res.getStatusCode());
 		Assert.assertTrue(res.getBody() != null);
 
-		logger.info("***Starting TC_ST_FP_03***");
+		logger.info("***Finshed TC_ST_FP_03***");
 
 	}
 
@@ -168,7 +168,7 @@ public class FindPurchaseOrderByIdTests {
 		Assert.assertTrue(res.getStatusCode() >= 400, "Unexpected status code! | " + res.getStatusCode());
 		Assert.assertTrue(res.getBody() != null);
 
-		logger.info("***Starting TC_ST_FP_04***");
+		logger.info("***Finshed TC_ST_FP_04***");
 
 	}
 	

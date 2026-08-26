@@ -1,25 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-24T22:33:12 GMT+07:00" name="Default suite" finished-at="2026-08-24T22:33:25 GMT+07:00" duration-ms="12819">
+  <suite started-at="2026-08-26T21:39:50 GMT+07:00" name="Default suite" finished-at="2026-08-26T21:40:13 GMT+07:00" duration-ms="23539">
     <groups>
     </groups>
-    <test started-at="2026-08-24T22:33:12 GMT+07:00" name="Default test" finished-at="2026-08-24T22:33:25 GMT+07:00" duration-ms="12819">
-      <class name="api.test.Store.FindPurchaseOrderByIdTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.Store.FindPurchaseOrderByIdTests@6d763516]" started-at="2026-08-24T22:33:12 GMT+07:00" name="setup" finished-at="2026-08-24T22:33:14 GMT+07:00" duration-ms="2480" status="PASS">
+    <test started-at="2026-08-26T21:39:50 GMT+07:00" name="Default test" finished-at="2026-08-26T21:40:13 GMT+07:00" duration-ms="23539">
+      <class name="api.test.Store.DeletePurchaseOrderByIdTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:39:50 GMT+07:00" name="setup" finished-at="2026-08-26T21:39:52 GMT+07:00" duration-ms="2555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="MainFunctionality()[pri:0, instance:api.test.Store.FindPurchaseOrderByIdTests@6d763516]" started-at="2026-08-24T22:33:14 GMT+07:00" name="MainFunctionality" finished-at="2026-08-24T22:33:16 GMT+07:00" duration-ms="1302" status="PASS">
+        <test-method signature="MainFunctionality()[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:39:52 GMT+07:00" name="MainFunctionality" finished-at="2026-08-26T21:39:55 GMT+07:00" duration-ms="2655" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <400> but was <200>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:139)
+at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:147)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at api.test.Store.DeletePurchaseOrderByIdTests.MainFunctionality(DeletePurchaseOrderByIdTests.java:87)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainFunctionality -->
-        <test-method signature="ResponseBody()[pri:0, instance:api.test.Store.FindPurchaseOrderByIdTests@6d763516]" started-at="2026-08-24T22:33:16 GMT+07:00" name="ResponseBody" finished-at="2026-08-24T22:33:17 GMT+07:00" duration-ms="1499" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:39:55 GMT+07:00" name="setup" finished-at="2026-08-26T21:39:56 GMT+07:00" duration-ms="1308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ResponseBody()[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:39:56 GMT+07:00" name="ResponseBody" finished-at="2026-08-26T21:39:58 GMT+07:00" duration-ms="1361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ResponseBody -->
-        <test-method signature="Validation_InvalidDataTypeParams(java.lang.Object)[pri:0, instance:api.test.Store.FindPurchaseOrderByIdTests@6d763516]" started-at="2026-08-24T22:33:17 GMT+07:00" name="Validation_InvalidDataTypeParams" data-provider="orderId_InvalidParamDataType" finished-at="2026-08-24T22:33:18 GMT+07:00" duration-ms="1222" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:39:58 GMT+07:00" name="setup" finished-at="2026-08-26T21:39:59 GMT+07:00" duration-ms="1315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validation_InvalidIDRequest(java.lang.Object)[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:39:59 GMT+07:00" name="Validation_InvalidIDRequest" data-provider="invalidId" finished-at="2026-08-26T21:40:00 GMT+07:00" duration-ms="1245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validation_InvalidIDRequest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:40:00 GMT+07:00" name="setup" finished-at="2026-08-26T21:40:02 GMT+07:00" duration-ms="1315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validation_InvalidIDRequest(java.lang.Object)[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:40:02 GMT+07:00" name="Validation_InvalidIDRequest" data-provider="invalidId" finished-at="2026-08-26T21:40:03 GMT+07:00" duration-ms="1325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@@@@@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validation_InvalidIDRequest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:40:03 GMT+07:00" name="setup" finished-at="2026-08-26T21:40:04 GMT+07:00" duration-ms="1286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validation_InvalidIDRequest(java.lang.Object)[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:40:04 GMT+07:00" name="Validation_InvalidIDRequest" data-provider="invalidId" finished-at="2026-08-26T21:40:05 GMT+07:00" duration-ms="1331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[999]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validation_InvalidIDRequest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:40:05 GMT+07:00" name="setup" finished-at="2026-08-26T21:40:07 GMT+07:00" duration-ms="1292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validation_InvalidParamDataTypeRequest(java.lang.Object)[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:40:07 GMT+07:00" name="Validation_InvalidParamDataTypeRequest" data-provider="InvalidParamDataType" finished-at="2026-08-26T21:40:08 GMT+07:00" duration-ms="1296" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,8 +131,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validation_InvalidDataTypeParams -->
-        <test-method signature="Validation_InvalidDataTypeParams(java.lang.Object)[pri:0, instance:api.test.Store.FindPurchaseOrderByIdTests@6d763516]" started-at="2026-08-24T22:33:18 GMT+07:00" name="Validation_InvalidDataTypeParams" data-provider="orderId_InvalidParamDataType" finished-at="2026-08-24T22:33:20 GMT+07:00" duration-ms="1252" status="PASS">
+        </test-method> <!-- Validation_InvalidParamDataTypeRequest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:40:08 GMT+07:00" name="setup" finished-at="2026-08-26T21:40:09 GMT+07:00" duration-ms="1297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validation_InvalidParamDataTypeRequest(java.lang.Object)[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:40:09 GMT+07:00" name="Validation_InvalidParamDataTypeRequest" data-provider="InvalidParamDataType" finished-at="2026-08-26T21:40:11 GMT+07:00" duration-ms="1285" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,8 +146,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validation_InvalidDataTypeParams -->
-        <test-method signature="Validation_InvalidDataTypeParams(java.lang.Object)[pri:0, instance:api.test.Store.FindPurchaseOrderByIdTests@6d763516]" started-at="2026-08-24T22:33:20 GMT+07:00" name="Validation_InvalidDataTypeParams" data-provider="orderId_InvalidParamDataType" finished-at="2026-08-24T22:33:21 GMT+07:00" duration-ms="1236" status="PASS">
+        </test-method> <!-- Validation_InvalidParamDataTypeRequest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:40:11 GMT+07:00" name="setup" finished-at="2026-08-26T21:40:12 GMT+07:00" duration-ms="1319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validation_InvalidParamDataTypeRequest(java.lang.Object)[pri:0, instance:api.test.Store.DeletePurchaseOrderByIdTests@15ff3e9e]" started-at="2026-08-26T21:40:12 GMT+07:00" name="Validation_InvalidParamDataTypeRequest" data-provider="InvalidParamDataType" finished-at="2026-08-26T21:40:13 GMT+07:00" duration-ms="1308" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,41 +161,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validation_InvalidDataTypeParams -->
-        <test-method signature="Validation_OutOfBoundRequest(java.lang.String)[pri:0, instance:api.test.Store.FindPurchaseOrderByIdTests@6d763516]" started-at="2026-08-24T22:33:21 GMT+07:00" name="Validation_OutOfBoundRequest" data-provider="orderId" finished-at="2026-08-24T22:33:22 GMT+07:00" duration-ms="1231" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[-1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Validation_OutOfBoundRequest -->
-        <test-method signature="Validation_OutOfBoundRequest(java.lang.String)[pri:0, instance:api.test.Store.FindPurchaseOrderByIdTests@6d763516]" started-at="2026-08-24T22:33:22 GMT+07:00" name="Validation_OutOfBoundRequest" data-provider="orderId" finished-at="2026-08-24T22:33:23 GMT+07:00" duration-ms="1271" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Validation_OutOfBoundRequest -->
-        <test-method signature="Validation_OutOfBoundRequest(java.lang.String)[pri:0, instance:api.test.Store.FindPurchaseOrderByIdTests@6d763516]" started-at="2026-08-24T22:33:23 GMT+07:00" name="Validation_OutOfBoundRequest" data-provider="orderId" finished-at="2026-08-24T22:33:25 GMT+07:00" duration-ms="1293" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[11]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Validation_OutOfBoundRequest -->
-      </class> <!-- api.test.Store.FindPurchaseOrderByIdTests -->
+        </test-method> <!-- Validation_InvalidParamDataTypeRequest -->
+      </class> <!-- api.test.Store.DeletePurchaseOrderByIdTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

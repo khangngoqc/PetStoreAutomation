@@ -44,5 +44,17 @@ public class StoreEndpoints {
 		
 	}
 	
+	public static Response DeleteOrderById(String id) {
+		
+		Response res = given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				.pathParam("orderId", id)
+				.when()
+					.delete(Routes.delete_PurchaseOrderById_url);
+		
+		return res;
+	}
+	
 
 }
