@@ -31,21 +31,21 @@ public class PetTestDataFactory {
 		return pet;
 	}
 	
-	private static Category randomCategory() {
+	public static Category randomCategory() {
 		return new Category(
 				faker.number().numberBetween(1, 100),
 				faker.animal().name() + "category"
 				);
 	}
 	
-	private static List<String> randomPhotoUrls(){
+	public static List<String> randomPhotoUrls(){
 		int count = random.nextInt(3) + 1; //1-3 urls
 		return IntStream.range(0, count)
 				.mapToObj(i -> faker.internet().image())
 				.collect(Collectors.toList());
 	}
 	
-	private static List<Tag> randomTags(){
+	public static List<Tag> randomTags(){
 		int count = random.nextInt(3) + 1; //1-3 tags
 		return IntStream.range(0, count)
 				.mapToObj(i -> new Tag(
@@ -55,7 +55,7 @@ public class PetTestDataFactory {
 				.collect(Collectors.toList());
 	}
 	
-	private static String randomStatus() {
+	public static String randomStatus() {
 		return STATUSES.get(random.nextInt(STATUSES.size()));
 	}
 

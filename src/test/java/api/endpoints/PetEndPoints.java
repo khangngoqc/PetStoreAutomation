@@ -4,6 +4,8 @@ import static io.restassured.RestAssured.given;
 
 import java.io.File;
 
+import api.payload.Pet;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 
@@ -20,5 +22,19 @@ public class PetEndPoints {
 		
 		return res;
 	}
+	
+	public static Response addNewPet(Pet petPayload) {
+		
+		Response res = given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+			.body(petPayload)
+				.when()
+			.post(Routes.post_addNewPet_url);
+			
+		return res;
+	}
+	
+	
 
 }

@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.Pet.UploadAImageTests">
+      <class name="api.test.Pet.AddANewPetToTheStore">
         <methods>
-          <include name="Validation_requestInvalidIds" invocation-numbers="0 2"/>
+          <include name="Validation_requestWithoutRequiredFields"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- api.test.Pet.UploadAImageTests -->
+      </class> <!-- api.test.Pet.AddANewPetToTheStore -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -35,6 +35,8 @@ public class UploadAImageTests {
 		logger = LogManager.getLogger(this.getClass());
 		
 		myPet = PetTestDataFactory.randomPet();
+		
+		PetEndPoints.addNewPet(myPet);
 	}
 	
 	@Test
