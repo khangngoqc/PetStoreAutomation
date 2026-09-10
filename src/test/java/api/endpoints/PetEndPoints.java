@@ -11,7 +11,7 @@ import io.restassured.response.Response;
 
 public class PetEndPoints {
 	
-	public static Response uploadAnImage(int id, String data, String filePath) {
+	public static Response uploadAnImage(long id, String data, String filePath) {
 		
 		Response res = given()
 				.pathParam("petId", id)
@@ -33,6 +33,18 @@ public class PetEndPoints {
 			.post(Routes.post_addNewPet_url);
 			
 		return res;
+	}
+	
+	public static Response updatePet(Pet petPayload) {
+		Response res = given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				.body(petPayload)
+				.when()
+				.put(Routes.put_updatePet_url);
+		
+		return res; 
+				
 	}
 	
 	
