@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.Pet.UpdateAnExistingPet">
+      <class name="api.test.Pet.FindPetByIStatusTests">
         <methods>
-          <include name="Validation_withoutRequiredFields"/>
+          <include name="validation_mixingStatusQuery"/>
+          <include name="validation_invalidStatus" invocation-numbers="0 1 2"/>
           <include name="setup"/>
-          <include name="Validation_updatePetWithInvalidIds" invocation-numbers="1 3"/>
         </methods>
-      </class> <!-- api.test.Pet.UpdateAnExistingPet -->
+      </class> <!-- api.test.Pet.FindPetByIStatusTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

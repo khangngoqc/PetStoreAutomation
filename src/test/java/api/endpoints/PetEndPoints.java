@@ -47,6 +47,17 @@ public class PetEndPoints {
 				
 	}
 	
+	public static Response findPetByStatus(String status) {
+		Response res = given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				.queryParam("status", status)
+				.when()
+				.get(Routes.get_findPetByStatus_url);
+		
+		return res;
+	}
+	
 	
 
 }
