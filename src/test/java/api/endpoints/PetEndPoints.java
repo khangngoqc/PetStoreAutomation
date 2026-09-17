@@ -58,6 +58,17 @@ public class PetEndPoints {
 		return res;
 	}
 	
+	public static Response findPetById(long id) {
+		Response res = given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				.pathParam("petId", id)
+				.when()
+				.get(Routes.get_findPetById_url);
+		
+		return res;
+	}
+	
 	
 
 }
