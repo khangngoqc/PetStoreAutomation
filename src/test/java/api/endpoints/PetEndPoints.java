@@ -69,6 +69,19 @@ public class PetEndPoints {
 		return res;
 	}
 	
+	public static Response updatePetForm(long id, String name , String status) {
+		Response res = given()
+				.contentType("application/x-www-form-urlencoded")
+				.pathParam("petId", id)
+				.formParam("name", name)
+				.formParam("status", status)
+				.when()
+				.post(Routes.post_updatePetForm_url);
+		
+		return res; 
+				
+	}
+	
 	
 
 }
